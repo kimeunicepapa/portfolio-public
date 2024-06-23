@@ -65,18 +65,19 @@ body {
     background-color: #FCF7F7;
     color: #110F10;
     font-family: 'ObjectSans';
-    font-size: 1em;
 
-    cursor: url("images/cursor.png"), auto;
+    cursor: url('images/cursor-black.png'), auto;
 }
 
 header {
+    /* max-width: ; */
     margin-top: 80px;
 }
 
 nav ul a {
     font-family: 'EditorialNew';
-    font-size: 20px;
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
 }
 
 main {
@@ -108,6 +109,7 @@ h3 {
     font-size: 1.3em;
 }
 
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -116,7 +118,6 @@ ul{
 
 li {
     list-style-type: none;
-    margin-bottom: 10px;
 }
 
 a {
@@ -124,12 +125,9 @@ a {
     color:#200604;
 }
 
-a:focus, a:hover {
-    color: #57506C;
-}
-
 p {
     margin: 10px 0;
+    font-size: 1.1em;
 }
 
 img {
@@ -173,7 +171,12 @@ footer h3 {
 
 .container .navbar ul li {
     /* padding: 10px; */
-    margin: 0 10px;
+    margin: 0 0 0 15px;
+}
+
+
+.container .navbar ul li img{
+    margin-right: 1px;
 }
 
 .navbar {
@@ -276,6 +279,72 @@ footer h3 {
     justify-content: space-between;
 }
 
+@media only screen and (min-width: 600px) {
+    p{
+        font-size: 0.9em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info {
+        margin: 15px 15px 0 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info h3 {
+        grid-column: 1/ span 3;
+    }
+
+    .year {
+        grid-column: 4;
+        justify-self: end;
+    }
+
+    .category {
+        grid-column: 1/ span4;
+    }
+    
+    #grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    #logo-footer {
+        height: 100px;
+        margin-top: 20px;
+
+        grid-column: 1 / 1;
+        grid-row: 2/2;
+    }
+
+    #footer-social {
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    #footer-social a {
+        height: 40px;
+    }
+
+    #footer-about {
+        max-width: 400px;
+        grid-column: 2 / 2;
+        grid-row: 1/ span 2;
+    }
+
+}
+
+
 @media only screen and (min-width: 1000px) {
     main {
         max-width: 100%;
@@ -286,7 +355,6 @@ footer h3 {
         margin: 10px 10px;
         font-size: 2.3em;
     }
-
 
 
     footer {
@@ -303,7 +371,7 @@ footer h3 {
     }
 
     .info {
-        margin: 15px 15px 20px 15px;
+        margin: 15px 15px 0 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -329,18 +397,22 @@ footer h3 {
         height: 50px;
     }
 
-    #h1-container {
-        width: 100%;
+    #hero {
+        max-width: 100%;
+        height: auto;
+    
 
-        margin-top: 250px;
+        padding-top: 250px;
+        overflow: hidden;
     }
 
-    #h1-container img{
+    #hero img{
         width: 100%;
     }
     
     #header-list {
         margin-bottom: 150px;
+        /* max-width: 100%; */
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -361,6 +433,7 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
+        row-gap: 20px;
     }
 
     #grid li img{
@@ -369,7 +442,7 @@ footer h3 {
 
     #about {
         max-width: 60%;
-        margin: 0 auto 30px auto;
+        margin: 30px auto 30px auto;
         padding: 20px 0;
         font-size: 1.5em;
         border-radius: 50px;
@@ -399,4 +472,33 @@ footer h3 {
     }
 
     
+    /* Animation and interaction */
+
+    li:hover {
+        cursor: url('images/cursor-red.png'), auto;
+        /* color: #B33031; */
+        color: #57506c;
+    }
+
+    a:hover {
+        cursor: url('images/cursor-red.png'), auto;
+    }
+
+    a:hover {
+        color: #7C7397;
+    }
+
+    #about:hover {
+        color: #FCF7F7;
+        background-color: #110F10;
+    }
+
+    .social:hover {
+        color: #FCF7F7;
+        background-color: #110F10;
+    }
+
+    #footer-about a:hover {
+        color: #FCF7F7;
+    }
 }
