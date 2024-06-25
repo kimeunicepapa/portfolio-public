@@ -93,15 +93,17 @@ h1 {
     margin: 0 10px 0 10px;
 }
 
-h2 {
+/* h2 {
     margin: 0 0 0 10px;
     padding: 0;
     font-size: 1.3em;
-}
+} */
 
-main h2 {
+h2 {
     margin: 10px;
-    font-size: 2.1em;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 h3 {
@@ -161,7 +163,8 @@ footer h3 {
     height: 60px;
     padding: 0 10px;
 
-    background-color: #FCF7F7;
+    background-color: rgba(252, 247, 247, 0.2);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #110F10;
 }
 
@@ -226,7 +229,8 @@ footer h3 {
 }
 
 #logo-footer {
-    margin-top: 10px;
+    height: 100px;
+    margin-top: 30px;
 }
 
 #header-list {
@@ -280,7 +284,12 @@ footer h3 {
 }
 
 @media only screen and (min-width: 600px) {
-    p{
+    h2 {
+        font-size: 2.2em;
+        letter-spacing: -0.02em;
+    }
+
+    p {
         font-size: 0.9em;
     }
 
@@ -288,6 +297,7 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
     }
 
     .info {
@@ -324,6 +334,7 @@ footer h3 {
 
         grid-column: 1 / 1;
         grid-row: 2/2;
+        align-self: end;
     }
 
     #footer-social {
@@ -351,9 +362,9 @@ footer h3 {
        
     }
 
-    main h2 {
-        margin: 10px 10px;
-        font-size: 2.3em;
+    h2 {
+        font-size: 2.8em;
+        letter-spacing: -0.03em;
     }
 
 
@@ -362,6 +373,7 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+
     }
 
 
