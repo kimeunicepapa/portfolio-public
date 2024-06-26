@@ -162,8 +162,10 @@ footer h3 {
     height: 60px;
     padding: 0 10px;
 
-    background-color: rgba(252, 247, 247, 0.2);
-    backdrop-filter: blur(10px);
+    background: inherit!important;
+    background-color: rgba(252, 247, 247, 0.2)!important;
+    backdrop-filter: blur(10px)!important;
+    -webkit-backdrop-filter: blur(10px)!important;
     border-bottom: 1px solid #110F10;
 }
 
