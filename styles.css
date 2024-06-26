@@ -210,6 +210,7 @@ footer h3 {
 }
 
 .social {
+    margin-right: 10px;
     padding: 10px 20px 10px 20px;
     border: 1px solid #110F10;
     border-radius: 25px;
@@ -278,12 +279,12 @@ footer h3 {
 }
 
 #footer-social {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     h2 {
         font-size: 2.2em;
         letter-spacing: -0.02em;
