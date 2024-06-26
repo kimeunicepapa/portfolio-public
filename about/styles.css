@@ -87,8 +87,8 @@ main {
 
 section {
     /* max-width: 500px; */
-    margin: 0 auto;
-    padding: 50px 0 30px 0;
+    margin: 40px 0 30px 0;
+    /* padding: 50px 0 30px 0; */
 }
 
 h1 {
@@ -223,7 +223,9 @@ footer h3 {
     margin-top: 30px;
 }
 
-
+#self {
+    display: none;
+}
 
 #work { 
     display: block;
@@ -244,14 +246,50 @@ footer h3 {
     justify-content: start;
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+    main {
+        margin: 40px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    main #self {
+        display: block;
+
+        grid-column: 1/ 1;
+    }
+
+    main section {
+        margin: 0;
+        grid-column: 2/ span 3;
+
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    main section #contact {
+       margin-top: auto;
+    }
+
+    main #work {
+        margin: 40px 0 50px 0;
+        grid-column: 1/ span 3;
+    }
+
+
+
     h2 {
-        font-size: 2.2em;
         letter-spacing: -0.02em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1.1em;
+    }
+
+    p:first-child {
+        margin-top: 0;
     }
 
     footer {
@@ -281,12 +319,38 @@ footer h3 {
         grid-column: 1/ span4;
     }
     
-    #grid {
-        width: 100%;
+    #hero {
+        /* width: 100%; */
+        margin-left: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         column-gap: 10px;
-        row-gap: 20px;
+    }
+
+    #hero h1 {
+        margin: 0;
+
+        grid-column: 1/ 1;
+        grid-row: 1/ 1;
+        justify-self: end;
+
+        font-size: 4.9em;
+    }
+
+    #hero h2 {
+        margin: 0;
+
+        grid-column: 2/ span 3;
+        grid-row: 2/ 2;
+        justify-self: start;
+
+        font-size: 4.9em;
+        text-align: start;
+    }
+
+    #contact p {
+        margin: 0;
     }
 
     #logo-footer {
@@ -314,18 +378,21 @@ footer h3 {
         grid-row: 1/ span 2;
     }
 
-} */
+}
 
 
-/* @media only screen and (min-width: 1000px) {
-    main {
+@media only screen and (min-width: 1000px) {
+    /* main {
         max-width: 100%;
        
+    } */
+
+    p {
+        font-size: 1.3em;
     }
 
-    h2 {
-        font-size: 2.8em;
-        letter-spacing: -0.03em;
+    a {
+        font-size: 1em;
     }
 
 
@@ -338,7 +405,7 @@ footer h3 {
     }
 
 
-    Classes styling
+    /* Classes styling */
     .container {
         height: 80px;
     }
@@ -364,58 +431,37 @@ footer h3 {
     }
 
 
-    Id styling
+    /* Id styling */
 
     #logo {
         height: 50px;
     }
 
     #hero {
-        max-width: 100%;
-        height: auto;
-    
-
-        padding-top: 250px;
-        overflow: hidden;
+        padding: 0;
+        margin: 100px 0 0 0;
     }
 
     #hero img{
         width: 100%;
     }
-    
-    #header-list {
-        margin-bottom: 150px;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10PX;
+    #hero h1 {
+        font-size: 6.5em;
     }
 
-    #header-list p {
-        margin: 0;
-        padding: 0 1px;
-
-        font-weight: 200;
-        font-size: 1.6em;
-    }
-    
-    
-    #grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 20px;
+    #hero h2 {
+        font-size: 6.5em;
+        letter-spacing: -0.03em;
     }
 
-    #grid li img{
-        width: 100%;
-    }
-
-    #about {
-        max-width: 60%;
-        margin: 30px auto 30px auto;
+    main #work {
+        width: 60%;
         padding: 20px 0;
+        margin: 40px 0 40px 0;
+
+        justify-self: center;
+
         font-size: 1.5em;
         border-radius: 50px;
     }
@@ -472,4 +518,4 @@ footer h3 {
     #footer-about a:hover {
         color: #FCF7F7;
     }
-} */
+}
