@@ -124,6 +124,11 @@ li {
 a {
     text-decoration: none;
     color:#200604;
+    font-size: 1.1em;
+}
+
+a[href^="mailto:"] {
+    font-size: 1em;
 }
 
 p {
@@ -199,7 +204,6 @@ footer h3 {
 
 
 .social {
-    margin-right: 10px;
     padding: 10px 25px 10px 25px;
     border: 1px solid #110F10;
     border-radius: 25px;
@@ -278,8 +282,6 @@ footer h3 {
         grid-column: 1/ span 3;
     }
 
-
-
     h2 {
         letter-spacing: -0.02em;
     }
@@ -290,6 +292,14 @@ footer h3 {
 
     p:first-child {
         margin-top: 0;
+    }
+
+    a {
+        font-size: 1.1em;
+    }
+
+    a[href^="mailto:"] {
+        font-size: 1em;
     }
 
     footer {
@@ -387,13 +397,13 @@ footer h3 {
        
     } */
 
-    p {
+    section p {
         font-size: 1.3em;
     }
 
-    a {
-        font-size: 1em;
-    }
+    /* a {
+        font-size: 1.3em;
+    } */
 
 
     footer {
@@ -490,15 +500,15 @@ footer h3 {
     }
 
     
-    Animation and interaction
+    /* Animation and interaction */
 
     li:hover {
-        cursor: url('images/cursor-red.png'), auto;
+        cursor: url('../images/cursor-red.png'), auto;
         color: #57506c;
     }
 
     a:hover {
-        cursor: url('images/cursor-red.png'), auto;
+        cursor: url('../images/cursor-red.png'), auto;
     }
 
     a:hover {
