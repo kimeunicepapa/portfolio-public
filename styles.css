@@ -351,8 +351,8 @@ footer h3 {
     }
 
     #logo-footer {
-        max-width: 242px;
-        margin-top: 20px;
+        margin: 0;
+        width: auto;
 
         grid-column: 1 / 1;
         grid-row: 2/2;
@@ -489,8 +489,10 @@ footer h3 {
     }
     
     #logo-footer {
-        max-width: 242px;
-        margin-top: 20px;
+        height: 130px;
+       /* width: 100%; */
+
+        grid-column: 1 / span 2;
     }
 
     #footer-social {
