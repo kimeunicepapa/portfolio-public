@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-regular.woff);
+    src: url(../../fonts/ppobjectsans-regular.woff);
 
 }
 
 @font-face {
     font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-slanted.woff);
+    src: url(../../fonts/ppobjectsans-slanted.woff);
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-bold.woff);
+    src: url(../../fonts/ppobjectsans-bold.woff);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-boldslanted.woff);
+    src: url(../../fonts/ppobjectsans-boldslanted.woff);
     font-weight: bold;
     font-style: italic;
 }
@@ -29,28 +29,28 @@
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(../fonts/ppeditorialnew-regular.woff);
+    src: url(../../fonts/ppeditorialnew-regular.woff);
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(../fonts/ppeditorialnew-italic.woff);
+    src: url(../../fonts/ppeditorialnew-italic.woff);
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(../fonts/ppeditorialnew-ultralight.woff);
+    src: url(../../fonts/ppeditorialnew-ultralight.woff);
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(../fonts/ppeditorialnew-ultralightitalic.woff);
+    src: url(../../fonts/ppeditorialnew-ultralightitalic.woff);
     font-style: italic;
     font-weight: 200;
 }
@@ -66,7 +66,7 @@ body {
     color: #110F10;
     font-family: 'ObjectSans';
 
-    cursor: url('../images/cursor-black.png'), auto;
+    cursor: url('../../images/cursor-black.png'), auto;
 }
 
 header {
@@ -257,12 +257,12 @@ footer h3 {
 /* Animation and interaction */
 
 li:hover {
-    cursor: url('../images/cursor-red.png'), auto;
+    cursor: url('../../images/cursor-red.png'), auto;
     color: #57506c;
 }
 
 a:hover {
-    cursor: url('../images/cursor-red.png'), auto;
+    cursor: url('../../images/cursor-red.png'), auto;
 }
 
 a:hover {
