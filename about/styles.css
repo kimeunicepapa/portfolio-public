@@ -110,6 +110,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    margin: 0;
+}
+
 
 ul{
     list-style-type: none;
@@ -152,7 +156,7 @@ footer {
 }
 
 footer h3 {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 
@@ -223,7 +227,7 @@ footer h3 {
 }
 
 #logo-footer {
-    height: 100px;
+    max-width: 250px;
     margin-top: 30px;
 }
 
@@ -247,7 +251,36 @@ footer h3 {
 #footer-social {
     margin-bottom: 30px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+}
+
+/* Animation and interaction */
+
+li:hover {
+    cursor: url('../images/cursor-red.png'), auto;
+    color: #57506c;
+}
+
+a:hover {
+    cursor: url('../images/cursor-red.png'), auto;
+}
+
+a:hover {
+    color: #7C7397;
+}
+
+#about:hover {
+    color: #FCF7F7;
+    background-color: #110F10;
+}
+
+.social:hover {
+    color: #FCF7F7;
+    background-color: #110F10;
+}
+
+#footer-about a:hover {
+    color: #FCF7F7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -304,29 +337,9 @@ footer h3 {
 
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        column-gap: 20px;
-    }
-
-    .info {
-        margin: 15px 15px 0 15px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .info h3 {
-        grid-column: 1/ span 3;
-    }
-
-    .year {
-        grid-column: 4;
-        justify-self: end;
-    }
-
-    .category {
-        grid-column: 1/ span4;
+        gap: 10px;
     }
     
     #hero {
@@ -364,8 +377,7 @@ footer h3 {
     }
 
     #logo-footer {
-        height: 100px;
-        margin-top: 20px;
+        margin: 0;
 
         grid-column: 1 / 1;
         grid-row: 2/2;
@@ -373,18 +385,22 @@ footer h3 {
     }
 
     #footer-social {
-        display: flex;
-        justify-content: start;
-        gap: 10px;
+        margin-bottom: 0;
+        display: block;
     }
 
     #footer-social a {
         height: 40px;
+        width: 130px;
+        
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     #footer-about {
-        max-width: 400px;
-        grid-column: 2 / 2;
+        /* max-width: 400px; */
+        grid-column: 2 / span 2;
         grid-row: 1/ span 2;
     }
 
@@ -408,36 +424,11 @@ footer h3 {
 
     footer {
         padding: 50px 15px 20px 15px;
+
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-
-    }
-
-
-    /* Classes styling */
-    .container {
-        height: 80px;
-    }
-
-    .info {
-        margin: 15px 15px 0 15px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .info h3 {
-        grid-column: 1/ span 3;
-    }
-
-    .year {
-        grid-column: 4;
-        justify-self: end;
-    }
-
-    .category {
-        grid-column: 1/ span4;
+        gap: 10px;
     }
 
 
@@ -477,55 +468,25 @@ footer h3 {
     }
     
     #logo-footer {
-        height: 150px;
-        margin-top: 20px;
+        max-width: 350px;
 
-        grid-column: 1 / 1;
-        grid-row: 2/2;
+        grid-column: 1 / span 2;
     }
 
     #footer-social {
-        display: flex;
-        justify-content: start;
         gap: 10px;
+
+        grid-column: 1 / span 2;
+        grid-row: 1/1;
     }
 
     #footer-social a {
         height: 40px;
+        align-self: end;
     }
 
     #footer-about {
-        grid-column: 2 / 2;
+        grid-column: 3 / 3;
         grid-row: 1/ span 2;
-    }
-
-    
-    /* Animation and interaction */
-
-    li:hover {
-        cursor: url('../images/cursor-red.png'), auto;
-        color: #57506c;
-    }
-
-    a:hover {
-        cursor: url('../images/cursor-red.png'), auto;
-    }
-
-    a:hover {
-        color: #7C7397;
-    }
-
-    #about:hover {
-        color: #FCF7F7;
-        background-color: #110F10;
-    }
-
-    .social:hover {
-        color: #FCF7F7;
-        background-color: #110F10;
-    }
-
-    #footer-about a:hover {
-        color: #FCF7F7;
     }
 }

@@ -153,7 +153,7 @@ footer {
 }
 
 footer h3 {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 
@@ -291,6 +291,36 @@ footer h3 {
     /* gap: 10px; */
 }
 
+ /* Animation and interaction */
+
+ li:hover {
+    cursor: url('images/cursor-red.png'), auto;
+    /* color: #B33031; */
+    color: #57506c;
+}
+
+a:hover {
+    cursor: url('images/cursor-red.png'), auto;
+}
+
+a:hover {
+    color: #7C7397;
+}
+
+#about:hover {
+    color: #FCF7F7;
+    background-color: #110F10;
+}
+
+.social:hover {
+    color: #FCF7F7;
+    background-color: #110F10;
+}
+
+#footer-about a:hover {
+    color: #FCF7F7;
+}
+
 @media only screen and (min-width: 768px) {
     h2 {
         font-size: 2.2em;
@@ -335,12 +365,6 @@ footer h3 {
     .category {
         grid-column: 1/ span4;
     }
-
-    .social {
-        align-self: end;
-    }
-
-    
     
     #grid {
         width: 100%;
@@ -365,7 +389,6 @@ footer h3 {
     }
 
     #footer-social a {
-        
         height: 40px;
         width: 130px;
         
@@ -398,6 +421,7 @@ footer h3 {
 
     footer {
         padding: 50px 15px 20px 15px;
+
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -515,34 +539,4 @@ footer h3 {
         grid-row: 1/ span 2;
     }
 
-    
-    /* Animation and interaction */
-
-    li:hover {
-        cursor: url('images/cursor-red.png'), auto;
-        /* color: #B33031; */
-        color: #57506c;
-    }
-
-    a:hover {
-        cursor: url('images/cursor-red.png'), auto;
-    }
-
-    a:hover {
-        color: #7C7397;
-    }
-
-    #about:hover {
-        color: #FCF7F7;
-        background-color: #110F10;
-    }
-
-    .social:hover {
-        color: #FCF7F7;
-        background-color: #110F10;
-    }
-
-    #footer-about a:hover {
-        color: #FCF7F7;
-    }
 }
