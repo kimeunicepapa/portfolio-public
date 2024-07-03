@@ -391,13 +391,13 @@ a:hover {
     }
 
     #intro {
-        margin: 40px 10px 50px 10px;
-        /* max-width: 600px; */
+        max-width: 600px;
+        margin: 40px auto 50px auto;
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 10px;
+        gap: 20px;
 
     }
 
@@ -499,13 +499,9 @@ a:hover {
         width: 100%;
     }
 
-
-
-    #hero h2 {
-        font-size: 6.5em;
-        letter-spacing: -0.03em;
+    #intro {
+        max-width: 60%;
     }
-
     
     #logo-footer {
         max-width: 350px;
