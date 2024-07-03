@@ -335,10 +335,10 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    main {
+    /* main {
         margin: 40px 0;
     
-    }
+    } */
 
     /* main #work {
         margin: 40px 0 50px 0;
@@ -386,8 +386,12 @@ a:hover {
         margin-top: 0;
     }
 
+    .text{
+        margin: 40px 10px 50px 10px;
+    }
+
     #intro {
-        /* margin: auto; */
+        margin: 40px 10px 50px 10px;
         /* max-width: 600px; */
 
         display: grid;
@@ -397,16 +401,33 @@ a:hover {
 
     }
 
-    #overview {
-        grid-column: 2/ span 2;
-        grid-rows: 1/1;
+    #end {
+        margin: 50px 10px;
     }
 
-    #side {
-        grid-column: 1/1;
+    #overview {
+        grid-column: 1/ span 2;
         grid-row: 1/1;
     }
 
+    #side {
+        grid-column: 3/3;
+        grid-row: 1/1;
+    }
+
+    #buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #previous {
+        grid-column: 1/1;
+    }
+
+    #next {
+        grid-column: 3/3;
+    }
 
 
     #logo-footer {
@@ -438,9 +459,12 @@ a:hover {
 
 }
 
-/* 
+
 @media only screen and (min-width: 1000px) {
 
+    h1 {
+        font-size: 6em;
+    }
 
     section p {
         font-size: 1.3em;
@@ -455,12 +479,12 @@ a:hover {
         gap: 10px;
     }
 
-     Classes styling
+     /* Classes styling */
      .container {
         height: 80px;
     }
 
-    Id styling
+    /* Id styling */
 
     #logo {
         height: 50px;
@@ -475,25 +499,13 @@ a:hover {
         width: 100%;
     }
 
-    #hero h1 {
-        font-size: 6.5em;
-    }
+
 
     #hero h2 {
         font-size: 6.5em;
         letter-spacing: -0.03em;
     }
 
-    main #work {
-        width: 60%;
-        padding: 20px 0;
-        margin: 40px 0 40px 0;
-
-        justify-self: center;
-
-        font-size: 1.5em;
-        border-radius: 50px;
-    }
     
     #logo-footer {
         max-width: 350px;
@@ -517,4 +529,4 @@ a:hover {
         grid-column: 3 / 3;
         grid-row: 1/ span 2;
     }
-} */
+}
