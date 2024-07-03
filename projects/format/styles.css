@@ -163,6 +163,10 @@ footer h3 {
     font-size: 1em;
 }
 
+footer p {
+    margin: 10px 0;
+}
+
 
 /* Classes styling */
 
@@ -222,6 +226,8 @@ footer h3 {
 
 .underlined {
     text-decoration: underline;
+    margin-bottom: 10px;
+
 }
 
 .text {
@@ -240,8 +246,9 @@ footer h3 {
 }
 
 #intro {
-    margin: 0 10px;
+    margin: 20px 10px;
 }
+
 
 #end {
     margin-bottom: 50px;
@@ -287,9 +294,6 @@ footer h3 {
 #self {
     display: none;
 }
-
-
-
 
 #footer-social {
     margin-bottom: 30px;
