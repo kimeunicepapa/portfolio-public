@@ -87,7 +87,7 @@ main {
 
 section {
     /* width: 100%; */
-    margin: 30px auto 0 auto;
+    margin: 30px 0 0 0;
 
     /* padding: 50px 0 30px 0; */
 }
@@ -334,41 +334,20 @@ a:hover {
     color: #FCF7F7;
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     main {
-        margin: 40px 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
+        margin: 40px 0;
+    
     }
 
-    main #self {
-        display: block;
-
-        grid-column: 1/ 1;
-    }
-
-    main section {
-        margin: 0;
-        grid-column: 2/ span 3;
-
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-    }
-
-    main section #contact {
-       margin-top: auto;
-    }
-
-    main #work {
+    /* main #work {
         margin: 40px 0 50px 0;
         grid-column: 1/ span 3;
-    }
+    } */
 
-    h2 {
+    /* h2 {
         letter-spacing: -0.02em;
-    }
+    } */
 
     p {
         font-size: 1.1em;
@@ -386,36 +365,49 @@ a:hover {
         font-size: 1em;
     }
 
+    h1 {
+        margin: 0 10px 10px 10px;
+
+        grid-column: 1/ 1;
+        grid-row: 1/ 1;
+        justify-self: end;
+
+    }
+
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10px;
     }
-    
-    #hero {
-        margin-left: 10px;
+
+    footer h3{
+        margin-top: 0;
+    }
+
+    #intro {
+        /* margin: auto; */
+        /* max-width: 600px; */
+
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 10px;
+        grid-template-rows: 1fr;
+        gap: 10px;
+
     }
 
-    #hero h1 {
-        margin: 0;
-
-        grid-column: 1/ 1;
-        grid-row: 1/ 1;
-        justify-self: end;
-
-        font-size: 4.9em;
+    #overview {
+        grid-column: 2/ span 2;
+        grid-rows: 1/1;
     }
 
- 
-
-    #contact p {
-        margin: 0;
+    #side {
+        grid-column: 1/1;
+        grid-row: 1/1;
     }
+
+
 
     #logo-footer {
         margin: 0;
@@ -444,7 +436,7 @@ a:hover {
         grid-row: 1/ span 2;
     }
 
-} */
+}
 
 /* 
 @media only screen and (min-width: 1000px) {
