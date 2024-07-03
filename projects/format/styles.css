@@ -82,36 +82,29 @@ nav ul a {
 
 main {
     max-width: 100%;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
 section {
-    /* max-width: 500px; */
-    margin: 40px 0 30px 0;
+    /* width: 100%; */
+    margin: 30px auto 0 auto;
+
     /* padding: 50px 0 30px 0; */
 }
 
 h1 {
-    margin: 0 10px 0 10px;
+    margin: 0 10px 10px 10px;
 
-    font-size: 7em;
-    text-align: center;
+    font-size: 4.5em;
+    line-height: 1.1em;
+    /* text-align: center; */
 }
-
 
 h2 {
-    margin: 0 10px;
-
-    font-family: 'EditorialNew';
-    font-size: 3.5em;
-    font-weight: 200;
-    font-style: italic;
-    letter-spacing: -0.01em;
-    text-align: center;
-}
-
-h3 {
-    margin: 0;
+    margin: 10px 0 5px 0;
+    font-family: 'ObjectSans';
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 
@@ -136,14 +129,25 @@ a[href^="mailto:"] {
 }
 
 p {
-    margin: 10px 0;
+    max-width: 600px;
+    margin: 0 0 10px 0;
+    padding: 0;
     font-size: 1.1em;
 }
+
 
 img {
     margin: 0;
     padding: 0;
     max-width: 100%;
+}
+
+section img {
+    margin-bottom: 10px;
+}
+
+#hero img {
+    margin-bottom: 10px;
 }
 
 /* Footer styling */
@@ -220,10 +224,59 @@ footer h3 {
     text-decoration: underline;
 }
 
+.text {
+    margin: 20px 10px 30px 10px;
+    /* text-align: center; */
+}
+
+.text p {
+    margin: 0 auto 10px auto;
+}
+
 /* Id styling */
 
 #logo {
    height: 30px;
+}
+
+#intro {
+    margin: 0 10px;
+}
+
+#end {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#end p {
+    margin: 0 auto 5px auto;
+}
+
+#buttons {
+    margin: 0 10px 50px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#buttons a {
+    padding: 15px 20px 5px 20px;
+    border: 1px solid;
+    border-radius: 30px;
+
+    font-family: 'ObjectSans';
+    /* font-size: 1.1em; */
+}
+
+#buttons #next{
+    text-align: right;
+}
+
+#buttons #buttonlabel {
+    margin: 0 0 5px 0;
+    font-family: 'EditorialNew';
+    font-weight: 400;
+    /* font-size: 1.1em; */
 }
 
 #logo-footer {
@@ -235,17 +288,7 @@ footer h3 {
     display: none;
 }
 
-#work { 
-    display: block;
-    margin: 10px 0 50px 0;
-    padding: 15px 0;
-    border: 1px solid;
-    border-radius: 30px;
-    text-align: center;
-    font-family: 'EditorialNew';
-    font-size: 1.5em;
 
-}
 
 
 #footer-social {
@@ -255,7 +298,7 @@ footer h3 {
 }
 
 /* Animation and interaction */
-
+/* 
 li:hover {
     cursor: url('../../images/cursor-red.png'), auto;
     color: #57506c;
@@ -281,9 +324,9 @@ a:hover {
 
 #footer-about a:hover {
     color: #FCF7F7;
-}
+} */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     main {
         margin: 40px 10px;
         display: grid;
@@ -343,7 +386,6 @@ a:hover {
     }
     
     #hero {
-        /* width: 100%; */
         margin-left: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -361,16 +403,7 @@ a:hover {
         font-size: 4.9em;
     }
 
-    #hero h2 {
-        margin: 0;
-
-        grid-column: 2/ span 3;
-        grid-row: 2/ 2;
-        justify-self: start;
-
-        font-size: 4.9em;
-        text-align: start;
-    }
+ 
 
     #contact p {
         margin: 0;
@@ -399,28 +432,19 @@ a:hover {
     }
 
     #footer-about {
-        /* max-width: 400px; */
         grid-column: 2 / span 2;
         grid-row: 1/ span 2;
     }
 
-}
+} */
 
-
+/* 
 @media only screen and (min-width: 1000px) {
-    /* main {
-        max-width: 100%;
-       
-    } */
+
 
     section p {
         font-size: 1.3em;
     }
-
-    /* a {
-        font-size: 1.3em;
-    } */
-
 
     footer {
         padding: 50px 15px 20px 15px;
@@ -431,12 +455,12 @@ a:hover {
         gap: 10px;
     }
 
-     /* Classes styling */
+     Classes styling
      .container {
         height: 80px;
     }
 
-    /* Id styling */
+    Id styling
 
     #logo {
         height: 50px;
@@ -493,4 +517,4 @@ a:hover {
         grid-column: 3 / 3;
         grid-row: 1/ span 2;
     }
-}
+} */
