@@ -272,7 +272,7 @@ footer p {
     border-radius: 30px;
 
     font-family: 'ObjectSans';
-    /* font-size: 1.1em; */
+    font-weight: bold;
 }
 
 #buttons #next{
@@ -283,7 +283,6 @@ footer p {
     margin: 0 0 5px 0;
     font-family: 'EditorialNew';
     font-weight: 400;
-    /* font-size: 1.1em; */
 }
 
 #logo-footer {
@@ -302,7 +301,7 @@ footer p {
 }
 
 /* Animation and interaction */
-/* 
+
 li:hover {
     cursor: url('../../images/cursor-red.png'), auto;
     color: #57506c;
@@ -316,7 +315,12 @@ a:hover {
     color: #7C7397;
 }
 
-#work:hover {
+#previous:hover {
+    color: #FCF7F7;
+    background-color: #110F10;
+}
+
+#next:hover {
     color: #FCF7F7;
     background-color: #110F10;
 }
@@ -328,7 +332,7 @@ a:hover {
 
 #footer-about a:hover {
     color: #FCF7F7;
-} */
+}
 
 /* @media only screen and (min-width: 768px) {
     main {
