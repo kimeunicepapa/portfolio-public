@@ -249,6 +249,9 @@ footer p {
     margin: 20px 10px;
 }
 
+#overview h2 {
+    font-size: 2em;
+}
 
 #end {
     margin-bottom: 50px;
@@ -406,6 +409,7 @@ a:hover {
     }
 
     #overview {
+        max-width: 600px;
         grid-column: 1/ span 2;
         grid-row: 1/1;
     }
@@ -500,7 +504,7 @@ a:hover {
     }
 
     #intro {
-        max-width: 60%;
+        max-width: 800px;
     }
     
     #logo-footer {

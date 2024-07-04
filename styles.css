@@ -292,7 +292,32 @@ footer h3 {
     /* gap: 10px; */
 }
 
- /* Animation and interaction */
+/* Error page */
+
+#comingsoon {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#comingsoon h1 {
+    font-family: 'EditorialNew';
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+}
+
+#comingsoon a {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'EditorialNew';
+}
+
+/* Animation and interaction */
 
  li:hover {
     cursor: url('images/cursor-red.png'), auto;
@@ -309,6 +334,11 @@ a:hover {
 }
 
 #about:hover {
+    color: #FCF7F7;
+    background-color: #110F10;
+}
+
+#comingsoon a:hover {
     color: #FCF7F7;
     background-color: #110F10;
 }
