@@ -243,6 +243,11 @@ footer p {
     margin: 0 auto 10px auto;
 } */
 
+
+.hidden {
+    visibility: hidden;
+}
+
 /* Id styling */
 
 #logo {
