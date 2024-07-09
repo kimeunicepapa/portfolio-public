@@ -235,9 +235,13 @@ footer p {
     /* text-align: center; */
 }
 
-.text p {
-    margin: 0 auto 10px auto;
+.text h2 {
+    font-size: 2em;
 }
+
+/* .text p {
+    margin: 0 auto 10px auto;
+} */
 
 /* Id styling */
 
@@ -390,7 +394,8 @@ a:hover {
     }
 
     .text{
-        margin: 40px 10px 50px 10px;
+        max-width: 600px;
+        margin: 40px auto 50px auto;
     }
 
     #intro {
@@ -486,6 +491,20 @@ a:hover {
      /* Classes styling */
      .container {
         height: 80px;
+    }
+
+    .text {
+        max-width: 800px;
+        margin: 60px auto 70px auto;
+        
+    }
+    .text h2 {
+        max-width: 600px;
+        margin: 10px auto 5px auto;
+    }
+
+    .text p {
+        margin: 0 auto 10px auto;
     }
 
     /* Id styling */
