@@ -488,7 +488,7 @@ a:hover {
     }
 
     .info {
-        margin: 10px 15px 0 15px;
+        margin: 10px 10px 0 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
