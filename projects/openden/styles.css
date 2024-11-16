@@ -140,6 +140,10 @@ p {
     font-size: 1.1em;
 }
 
+figcaption {
+    margin: 0 10px
+}
+
 
 img {
     margin: 0;
