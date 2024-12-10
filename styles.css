@@ -66,7 +66,6 @@ body {
     color: #110F10;
     font-family: 'ObjectSans';
 
-    cursor: url('images/cursor-black.png'), auto;
 }
 
 header {
@@ -324,13 +323,11 @@ footer h3 {
 /* Animation and interaction */
 
  li:hover {
-    cursor: url('images/cursor-red.png'), auto;
     /* color: #B33031; */
     color: #57506c;
 }
 
 a:hover {
-    cursor: url('images/cursor-red.png'), auto;
     color: #7C7397;
 }
 

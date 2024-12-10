@@ -314,12 +314,7 @@ footer p {
 /* Animation and interaction */
 
 li:hover {
-    cursor: url('../../images/cursor-red.png'), auto;
     color: #57506c;
-}
-
-a:hover {
-    cursor: url('../../images/cursor-red.png'), auto;
 }
 
 a:hover {
