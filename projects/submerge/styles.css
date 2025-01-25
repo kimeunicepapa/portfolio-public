@@ -66,7 +66,6 @@ body {
     color: #110F10;
     font-family: 'ObjectSans';
 
-    cursor: url('../../images/cursor-black.png'), auto;
 }
 
 header {
@@ -96,14 +95,14 @@ h1 {
     margin: 0 10px 10px 10px;
 
     font-size: 4.5em;
-    line-height: 1.1em;
+    /* line-height: 1.1em; */
     /* text-align: center; */
 }
 
 h2 {
-    margin: 10px 0 5px 0;
+    /* margin: 1em 0 0 0; */
     font-family: 'ObjectSans';
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -130,9 +129,9 @@ a[href^="mailto:"] {
 
 p {
     max-width: 600px;
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 1.1em;
+    /* margin: 0 0 1em 0; */
+    /* padding: 0; */
+    /* font-size: 1.2em; */
 }
 
 
@@ -235,14 +234,13 @@ footer p {
     /* text-align: center; */
 }
 
-.text h2 {
+/* .text h2 {
     font-size: 2em;
-}
+} */
 
 /* .text p {
     margin: 0 auto 10px auto;
 } */
-
 
 .hidden {
     visibility: hidden;
@@ -258,9 +256,9 @@ footer p {
     margin: 20px 10px;
 }
 
-#overview h2 {
+/* #overview h2 {
     font-size: 2em;
-}
+} */
 
 #end {
     margin-bottom: 50px;
@@ -356,9 +354,9 @@ a:hover {
         letter-spacing: -0.02em;
     } */
 
-    p {
+    /* p {
         font-size: 1.1em;
-    }
+    } */
 
     p:first-child {
         margin-top: 0;
@@ -475,9 +473,9 @@ a:hover {
         font-size: 6em;
     }
 
-    section p {
+    /* section p {
         font-size: 1em;
-    }
+    } */
 
     footer {
         padding: 50px 15px 20px 15px;
