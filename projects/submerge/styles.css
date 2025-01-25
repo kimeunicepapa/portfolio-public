@@ -100,7 +100,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 1em 0 .5em 0;
     font-family: 'ObjectSans';
     font-size: 1.1em;
     font-weight: bold;
@@ -129,7 +129,7 @@ a[href^="mailto:"] {
 
 p {
     max-width: 600px;
-    /* margin: 0 0 1em 0; */
+    margin: 0;
     /* padding: 0; */
     font-size: 1.1em;
     line-height: 1.3em;
