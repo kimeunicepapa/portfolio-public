@@ -100,9 +100,9 @@ h1 {
 }
 
 h2 {
-    /* margin: 1em 0 0 0; */
+    margin: 1em 0 .5em 0;
     font-family: 'ObjectSans';
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -129,9 +129,10 @@ a[href^="mailto:"] {
 
 p {
     max-width: 600px;
-    /* margin: 0 0 1em 0; */
+    margin: 0;
     /* padding: 0; */
-    /* font-size: 1.2em; */
+    font-size: 1.1em;
+    line-height: 1.3em;
 }
 
 
@@ -234,9 +235,9 @@ footer p {
     /* text-align: center; */
 }
 
-/* .text h2 {
-    font-size: 2em;
-} */
+.text h2 {
+    font-size: 1.8em;
+}
 
 /* .text p {
     margin: 0 auto 10px auto;
@@ -256,9 +257,9 @@ footer p {
     margin: 20px 10px;
 }
 
-/* #overview h2 {
-    font-size: 2em;
-} */
+#overview h2 {
+    font-size: 1.8em;
+}
 
 #end {
     margin-bottom: 50px;
@@ -397,8 +398,8 @@ a:hover {
     }
 
     #intro {
-        max-width: 600px;
-        margin: 40px auto 50px auto;
+        /* max-width: 600px; */
+        /* margin: 40px auto 50px auto; */
         /* max-width: 600px; */
 
         display: grid;
@@ -473,6 +474,10 @@ a:hover {
         font-size: 6em;
     }
 
+    /* h2 {
+        margin: 0;
+    } */
+
     /* section p {
         font-size: 1em;
     } */
@@ -519,10 +524,10 @@ a:hover {
     #hero img{
         width: 100%;
     }
-
+/* 
     #intro {
         max-width: 800px;
-    }
+    } */
     
     #logo-footer {
         max-width: 350px;

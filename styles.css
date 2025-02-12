@@ -64,7 +64,8 @@
 body {
     background-color: #FCF7F7;
     color: #110F10;
-    font-family: 'ObjectSans';
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 
 }
 
@@ -106,6 +107,8 @@ h2 {
 }
 
 h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700; 
     margin: 0;
     font-size: 1.3em;
 }
@@ -214,9 +217,9 @@ footer h3 {
 
 .info p {
     margin: 0;
-    font-family: 'EditorialNew';
+    /* font-family: 'EditorialNew';
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05em; */
 }
 
 .social {
@@ -358,11 +361,11 @@ a:hover {
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     a {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     a[href^="mailto:"] {
@@ -381,7 +384,7 @@ a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        row-gap: 10px;
+        row-gap: 5px;
     }
 
     .info img {

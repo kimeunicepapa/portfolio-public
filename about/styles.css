@@ -64,7 +64,8 @@
 body {
     background-color: #FCF7F7;
     color: #110F10;
-    font-family: 'ObjectSans';
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 
 header {
@@ -126,7 +127,7 @@ li {
 a {
     text-decoration: none;
     color:#200604;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 a[href^="mailto:"] {
@@ -135,7 +136,7 @@ a[href^="mailto:"] {
 
 p {
     margin: 10px 0;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 img {
@@ -313,7 +314,7 @@ a:hover {
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     p:first-child {
@@ -407,7 +408,7 @@ a:hover {
     } */
 
     section p {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     /* a {
