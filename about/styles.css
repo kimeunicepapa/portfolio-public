@@ -314,6 +314,7 @@ a:hover {
     }
 
     p {
+        max-width: 600px;
         font-size: 1em;
     }
 
