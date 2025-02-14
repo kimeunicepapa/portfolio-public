@@ -249,7 +249,7 @@ footer h3 {
 #header-list {
     margin: 0 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10PX;
 }
 
@@ -530,7 +530,7 @@ a:hover {
         /* max-width: 100%; */
 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10PX;
     }
 
