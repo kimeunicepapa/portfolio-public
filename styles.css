@@ -229,6 +229,7 @@ li {
 
 
 /*//////////////  LINKS ////////////////*/
+
 a {
     text-decoration: none;
     color:#200604;
@@ -352,9 +353,9 @@ footer a {
 
 /*///////////// OTHERS ///////////*/
 
-/* .underlined {
+.underlined {
     text-decoration: underline;
-} */
+}
 
 /*/////////////////////// CLASSES end ////////////////////////*/
 
