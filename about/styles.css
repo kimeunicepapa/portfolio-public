@@ -11,33 +11,6 @@
 }
 
 
-/* PP Object Sans font-face rules */
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-regular.woff);
-
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-slanted.woff);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-bold.woff);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(../fonts/ppobjectsans-boldslanted.woff);
-    font-weight: bold;
-    font-style: italic;
-}
-
 /* PP Editorial New font-face rules */
 
 @font-face {
@@ -131,12 +104,14 @@ body {
 
 
 
-
+/*/////////////// HEADER, MAIN, SECTIONS start ////////////////*/
 header {
     /* max-width: ; */
     margin-top: 150px;
 }
-
+#hero {
+    margin: 0 20px;
+}
 main {
     max-width: 100%;
     margin: 0 10px;
@@ -147,24 +122,29 @@ section {
     margin: 40px 0 30px 0;
     /* padding: 50px 0 30px 0; */
 }
+/*/////////////// HEADER, MAIN, SECTIONS end ////////////////*/
+
+
+/*/////////////////////// TEXT start ////////////////////////*/
 
 h1 {
-    margin: 0 10px 0 10px;
+    margin: 0;
 
-    font-size: 7em;
-    text-align: center;
+    font-family: 'RightGroteskMedium';
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0;
+}
+
+h2 > #kim-mobile {
+    display: block;
 }
 
 
-h2 {
-    margin: 0 10px;
-
-    font-family: 'EditorialNew';
-    font-size: 3.5em;
-    font-weight: 200;
-    font-style: italic;
-    letter-spacing: -0.01em;
-    text-align: center;
+h2 > #kim-desktop {
+    display: none;
 }
 
 h3 {
@@ -197,11 +177,24 @@ p {
     font-size: 1em;
 }
 
+
+/*/////////////////////// TEXT end ////////////////////////*/
+
+
+
+
+/*/////////////////////// IMAGES start ////////////////////////*/
+
 img {
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
+
+/*/////////////////////// IMAGES end ////////////////////////*/
+
+
+
 
 /* Footer styling */
 
@@ -230,11 +223,10 @@ footer h3 {
 }
 
 footer a {
+
     display: flex;
 
     line-height: 1.1em;
-    text-decoration: underline 1px;
-    text-underline-offset: 0.2em;
 }
 
 
@@ -252,7 +244,6 @@ footer a {
 #footer-social > p {
     margin-bottom: 20px;
 
-    text-underline-offset: 0.2em;
 }
 
 #footer-social > a {
@@ -264,12 +255,16 @@ footer a {
 #footer-about > p {
     margin-bottom: 20px;
 
-    text-underline-offset: 0.2em;
 }
 
 #copyright {
     margin: 50px 0 0 0;
     font-size: 0.8em;
+}
+
+.underlined {
+    text-decoration: underline 1px solid #101010 !important;
+    text-underline-offset: 0.2em;
 }
 
 /*/////////////////////// FOOTER end ////////////////////////*/
@@ -320,17 +315,9 @@ footer a {
 } */
 
 
-
-
-.underlined {
-    text-decoration: underline;
-}
-
 /* Id styling */
 
-#logo {
-   height: 30px;
-}
+
 
 
 
@@ -375,6 +362,13 @@ a:hover {
 #footer-about a:hover {
     color: #FCF7F7;
 }
+
+
+
+
+
+
+/*/////////////// MOBILE HORIZONTAL(min-width: 768px) start /////////////////*/
 
 @media only screen and (min-width: 768px) {
     main {
@@ -493,6 +487,15 @@ a:hover {
 }
 
 
+/*/////////////// MOBILE HORIZONTAL(min-width: 768px) end /////////////////*/
+
+
+
+
+
+
+/*////////////////// DESKTOP (min-width: 1000px) start ////////////////////*/
+
 @media only screen and (min-width: 1000px) {
     /* main {
         max-width: 100%;
@@ -580,3 +583,5 @@ a:hover {
         grid-row: 1/ span 2;
     }
 }
+
+/*////////////////// DESKTOP (min-width: 1000px) end ////////////////////*/

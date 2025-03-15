@@ -132,13 +132,13 @@ h1 {
     margin: 0;
 }
 
-h1 > #h1-mobile {
+h1 > #kim-mobile {
     display: block;
 }
 
 
 
-h1 > #h1-desktop {
+h1 > #kim-desktop {
     display: none;
 }
 
@@ -284,6 +284,11 @@ footer a {
     font-size: 0.8em;
 }
 
+.underlined {
+    text-decoration: underline 1px solid #101010 !important;
+    text-underline-offset: 0.2em;
+}
+
 /*/////////////////////// FOOTER end ////////////////////////*/
 
 
@@ -323,10 +328,6 @@ footer a {
 
 /*///////////// OTHERS ///////////*/
 
-.underlined {
-    text-decoration: underline 1px solid #101010 !important;
-    text-underline-offset: 0.2em;
-}
 
 /*/////////////////////// CLASSES end ////////////////////////*/
 
@@ -415,11 +416,11 @@ footer a {
 
     /*/////////////////////// TEXT start ////////////////////////*/
 
-    h1 > #h1-mobile {
+    h1 > #kim-mobile {
         display: none;
     }
     
-    h1 > #h1-desktop {
+    h1 > #kim-desktop {
         display: block;
     }
 
