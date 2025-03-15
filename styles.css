@@ -350,7 +350,7 @@ footer a {
 /*///////////// OTHERS ///////////*/
 
 .underlined {
-    text-decoration: underline !important;
+    text-decoration: underline 1px solid #101010 !important;
     text-underline-offset: 0.2em;
 }
 
@@ -423,6 +423,14 @@ footer a {
 }
 
 /*///////////////////// ERROR PAGE end //////////////////////*/
+
+
+/*//////////////////// MOBILE (max-width: 768px) end //////////////////////*/
+
+
+
+
+
 
 
 
