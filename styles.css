@@ -10,32 +10,6 @@
     src: url(fonts/PPRightGroteskText-CompactMedium.woff);
 }
 
-/*//////////////////   PP Object Sans font-face rules   //////////////////*/
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(fonts/ppobjectsans-regular.woff);
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(fonts/ppobjectsans-slanted.woff);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(fonts/ppobjectsans-bold.woff);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(fonts/ppobjectsans-boldslanted.woff);
-    font-weight: bold;
-    font-style: italic;
-}
-
 /*//////////////////  PP Editorial New font-face rules   //////////////////*/
 
 @font-face {
@@ -722,6 +696,8 @@ footer a {
 
     #footer-social a {
         align-self: end;
+
+        text-decoration: underline 1px solid #101010;
     }
 
     #footer-about {
@@ -734,6 +710,8 @@ footer a {
         grid-column: 2 / 2;
         grid-row: 8 / 8;
         align-self: end;
+
+        text-decoration: underline 1px solid #101010;
     }
 
     #copyright {
@@ -741,6 +719,10 @@ footer a {
         grid-row: 8 / 8;
         align-self: end;
         font-size: 1em;
+    }
+
+    .underlined {
+        text-decoration: none;
     }
 
     /*/////////////////// FOOTER end ////////////////////*/
@@ -797,12 +779,20 @@ footer a {
     #footer-social a:hover {
         color: #FCF7F7;
         font-style: italic;
+
+        text-decoration: underline 1px solid #FCF7F7;
     }
 
     footer a:hover {
         color: #FCF7F7;
         font-style: italic;
+
     }
+
+    footer #back-to-top:hover {
+        text-decoration: underline 1px solid #FCF7F7;
+    }
+
 
     /*////////////// ANIMATION & INTERACTION end ///////////////*/  
 }
