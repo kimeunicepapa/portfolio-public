@@ -275,7 +275,7 @@ footer a {
     display: flex;
 
     line-height: 1.1em;
-    text-decoration: underline 1px;
+    text-decoration: underline 1px !important;
     text-underline-offset: 0.2em;
 }
 
@@ -354,7 +354,7 @@ footer a {
 /*///////////// OTHERS ///////////*/
 
 .underlined {
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 
 /*/////////////////////// CLASSES end ////////////////////////*/
