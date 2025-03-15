@@ -1,9 +1,20 @@
-/* PP Object Sans font-face rules */
+/*//////////////////   PP Right Grotesk font-face rules   //////////////////*/
+
+@font-face {
+    font-family: 'RightGroteskDark';
+    src: url(fonts/PPRightGrotesk-CompactDark.woff);
+}
+
+@font-face {
+    font-family: 'RightGroteskMedium';
+    src: url(fonts/PPRightGroteskText-CompactMedium.woff);
+}
+
+/*//////////////////   PP Object Sans font-face rules   //////////////////*/
 
 @font-face {
     font-family: 'ObjectSans';
     src: url(fonts/ppobjectsans-regular.woff);
-
 }
 
 @font-face {
@@ -25,7 +36,7 @@
     font-style: italic;
 }
 
-/* PP Editorial New font-face rules */
+/*//////////////////  PP Editorial New font-face rules   //////////////////*/
 
 @font-face {
     font-family: 'EditorialNew';
@@ -55,7 +66,10 @@
     font-weight: 200;
 }
 
-/* Styling starts here */
+
+/*////////////////////////////// CSS STYLES //////////////////////////////////*/
+
+/*//////////////////// MOBILE (max-width: 768px) start //////////////////////*/
 
 * {
     box-sizing: border-box;
@@ -63,22 +77,65 @@
 
 body {
     background-color: #FCF7F7;
-    color: #110F10;
+    color: #101010;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-
 }
+
+/*////////////////////// NAVIGATION start ///////////////////////*/
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+
+    background: inherit!important;
+    background-color: rgba(252, 247, 247, 0.2)!important;
+    backdrop-filter: blur(10px)!important;
+    -webkit-backdrop-filter: blur(10px)!important;
+    border-bottom: 1px solid #110F10;
+
+    display: flex;
+    justify-content: space-between
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    height: 60px;
+    margin: 0;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar > ul > li > a {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+
+    font-family: 'RightGroteskMedium';
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+/*////////////////////// NAVIGATION end ///////////////////////*/
+
+
+
+
+/*/////////////// HEADER, MAIN, SECTIONS start ////////////////*/
 
 header {
-    /* max-width: ; */
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
-nav ul a {
-    font-family: 'EditorialNew';
-    font-size: 1.1em;
-    letter-spacing: 0.03em;
-}
 
 main {
     max-width: 100%;
@@ -86,34 +143,76 @@ main {
 }
 
 section {
-    padding: 100px 0 30px 0;
+    padding: 100px 0;
 }
 
+/*/////////////// HEADER, MAIN, SECTIONS end ////////////////*/
+
+
+
+
+/*/////////////////////// TEXT start ////////////////////////*/
+
+/*//////// HEADINGS, PARAGRAPH ///////*/
 h1 {
-    margin: 0 10px 0 10px;
+    margin: 0;
 }
 
-/* h2 {
-    margin: 0 0 0 10px;
-    padding: 0;
-    font-size: 1.3em;
-} */
+h1 > #h1-mobile {
+    display: block;
+}
+
+
+
+h1 > #h1-desktop {
+    display: none;
+}
+
 
 h2 {
-    margin: 10px;
-    font-size: 2em;
-    font-weight: 400;
-    letter-spacing: -0.01em;
+    margin: 10px 20px;
+
+    font-family: 'EditorialNew';
+    font-size: 2.3em;
+    font-weight: 200;
 }
 
 h3 {
     font-family: "Inter", sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1em;
+}
+
+h4 {
+    margin: 0;
+
+    font-family: 'EditorialNew';
+    font-weight: 200;
+    font-size: 1.8em;
+    line-height: 0.5em;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+#header-list > p {
+    margin-top: 10px;
+
+    font-family: 'EditorialNew';
+    font-weight: 200;
+    font-size: 1.5em;
+    line-height: 90%;
 }
 
 
+
+
+/*//////////////  LIST ////////////////*/
 ul{
     list-style-type: none;
     margin: 0;
@@ -124,6 +223,12 @@ li {
     list-style-type: none;
 }
 
+#grid > li {
+    margin-bottom: 20px;
+}
+
+
+/*//////////////  LINKS ////////////////*/
 a {
     text-decoration: none;
     color:#200604;
@@ -134,144 +239,133 @@ a[href^="mailto:"] {
     font-size: 1em;
 }
 
-p {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
+/*/////////////////////// TEXT end ////////////////////////*/
 
-img {
+
+
+
+
+/*/////////////////////// IMAGES start ////////////////////////*/
+h1 > img {
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100%;
 }
+/*/////////////////////// IMAGES end ////////////////////////*/
 
-/* Footer styling */
+
+
+
+/*/////////////////////// FOOTER start ////////////////////////*/
 
 footer {
     margin: 0;
-    padding: 50px 10px 10px 10px;
+    padding: 50px 20px 20px 20px;
 
-    background-color: #9C95B0;
+    background-color: #BAB0D6;
 }
 
 footer h3 {
     font-size: 1em;
 }
 
+footer a {
 
-/* Classes styling */
-
-.container {
-    /* display: none; */
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    padding: 0 10px;
-
-    background: inherit!important;
-    background-color: rgba(252, 247, 247, 0.2)!important;
-    backdrop-filter: blur(10px)!important;
-    -webkit-backdrop-filter: blur(10px)!important;
-    border-bottom: 1px solid #110F10;
-}
-
-.container .navbar {
-    justify-content: space-between;
-}
-
-.container .navbar ul li {
-    /* padding: 10px; */
-    margin: 0 0 0 15px;
-}
-
-
-.container .navbar ul li img{
-    margin-right: 1px;
-}
-
-.navbar {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 10px;
+
+    line-height: 1.1em;
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2em;
 }
 
-.navbar ul {
-    display: flex;
+
+#logo-footer {
+    height: 100px;
 }
 
+#footer-social {
+    margin: 30px 0 50px 0;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+}
+
+#footer-social > p {
+    margin-bottom: 20px;
+
+    text-underline-offset: 0.2em;
+}
+
+#footer-social > a {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+
+#footer-about > p {
+    margin-bottom: 20px;
+
+    text-underline-offset: 0.2em;
+}
+
+#copyright {
+    margin: 50px 0 0 0;
+    font-size: 0.8em;
+}
+
+/*/////////////////////// FOOTER end ////////////////////////*/
+
+
+
+
+/*/////////////////////// CLASSES start ////////////////////////*/
+
+/*//////// PROJECTS' INFO ///////*/
 
 .info {
-    display: none;
-    margin: 0 10px 0 10px;
+    margin: 0 20px 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
 }
 
 .info img {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.info p {
+.info > p {
     margin: 0;
-    /* font-family: 'EditorialNew';
-    font-weight: 400;
-    letter-spacing: 0.05em; */
+
+    font-size: 0.8em;
 }
 
-.social {
-    padding: 10px 25px 10px 25px;
-    border: 1px solid #110F10;
-    border-radius: 25px;
+.info > .category {
+    grid-column: 1 / span 2;
 
-    font-family: 'EditorialNew';
-    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.underlined {
-    text-decoration: underline;
-}
-
-/* Id styling */
-
-#logo {
-   height: 30px;
-}
-
-#logo-footer {
-    max-width: 250px;
-    margin-top: 30px;
-}
-
-#header-list {
-    margin: 0 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10PX;
-}
-
-#header-list p {
-    text-align: center;
-
-    font-family: 'EditorialNew';
-    font-style: italic;
-    font-weight: 200;
-    font-size: 1.3em;
-}
-
-#header-list p:first-child {
-    text-align: start;
-}
-
-#header-list p:last-child {
+.info > .year {
     text-align: end;
 }
 
-#grid {
-    margin-bottom: 20px;
+/*///////////// OTHERS ///////////*/
+
+/* .underlined {
+    text-decoration: underline;
+} */
+
+/*/////////////////////// CLASSES end ////////////////////////*/
+
+
+
+
+
+/*///////////////////////// ID start //////////////////////////*/
+
+#hero {
+    margin: 0 20px;
 }
 
 #grid img {
@@ -280,25 +374,28 @@ footer h3 {
 }
 
 
-#about { 
+#about {
     display: block;
-    margin: 10px;
-    padding: 15px 0;
-    border: 1px solid;
-    border-radius: 25px;
+    margin: 50px 20px;
+    padding: 30px 0;
+
+    background-color: #101010;
+    color: #FCF7F7;
+    border-radius: 16px;
     text-align: center;
-    font-family: 'EditorialNew';
-
+    font-family: 'RightGroteskMedium';
+    text-transform: uppercase;
 }
 
-#footer-social {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    /* gap: 10px; */
-}
 
-/* Error page */
+/*///////////////////////// ID end //////////////////////////*/
+
+
+
+
+
+
+/*///////////////////// ERROR PAGE start //////////////////////*/
 
 #comingsoon {
     width: 80%;
@@ -307,61 +404,98 @@ footer h3 {
 }
 
 #comingsoon h1 {
-    font-family: 'EditorialNew';
-    font-size: 2.5em;
-    letter-spacing: 0.05em;
+    font-family: 'RightGroteskDark';
+    font-size: 3em;
+    /* letter-spacing: 0.05em; */
 }
 
 #comingsoon a {
     width: 200px;
     display: block;
-    margin: 20px auto;
-    padding: 15px 0;
-    border: 1px solid;
-    border-radius: 25px;
+    margin: 30px auto;
+    padding: 20px 0;
+    border-radius: 16px;
+
+    background-color: #101010;
+    color: #FCF7F7;
+
+    font-family: 'RightGroteskMedium';
     text-align: center;
-    font-family: 'EditorialNew';
+    text-transform: uppercase;
 }
 
-/* Animation and interaction */
+/*///////////////////// ERROR PAGE end //////////////////////*/
 
- li:hover {
-    /* color: #B33031; */
-    color: #57506c;
+
+
+/*////////////// ANIMATION & INTERACTION start ///////////////*/
+
+#grid li:hover .info {
+    color: #B33031;
+    font-style: italic;
 }
 
-a:hover {
-    color: #7C7397;
+
+.navbar > ul > li > a:hover {
+    color: #B33031;
+    font-style: italic;
 }
 
 
 #about:hover {
-    color: #FCF7F7;
-    background-color: #110F10;
+    background-color: #BAB0D6;
+    color: #101010;
 }
 
 #comingsoon a:hover {
-    color: #FCF7F7;
-    background-color: #110F10;
+    background-color: #BAB0D6;
+    color: #101010;
 }
 
-.social:hover {
+#footer-social a:hover {
     color: #FCF7F7;
-    background-color: #110F10;
+    font-style: italic;
 }
 
-#footer-about a:hover {
+footer a:hover {
     color: #FCF7F7;
+    font-style: italic;
 }
+
+/*////////////// ANIMATION & INTERACTION end ///////////////*/
+
+
+
+/*/////////////// MOBILE HORIZONTAL(min-width: 768px) start /////////////////*/
 
 @media only screen and (min-width: 768px) {
+
+    /*/////////////////////// TEXT start ////////////////////////*/
+
+    h1 > #h1-mobile {
+        display: none;
+    }
+    
+    h1 > #h1-desktop {
+        display: block;
+    }
+
     h2 {
         font-size: 2.2em;
         letter-spacing: -0.02em;
     }
 
+    h4 {
+        font-size: 3.5em;
+        line-height: 0.55em;
+    }
+
     p {
         font-size: 1em;
+    }
+
+    #grid > li {
+        margin-bottom: 0;
     }
 
     a {
@@ -372,15 +506,15 @@ a:hover {
         font-size: 1em;
     }
 
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-    }
+    /*/////////////////////// TEXT start ////////////////////////*/
+
+
+    /*/////////////////////// CLASSES start ////////////////////////*/
+
+    /*//////// PROJECTS' INFO ///////*/
 
     .info {
-        margin: 5px 10px 0 10px;
+        margin: 10px 20px 0 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -396,22 +530,24 @@ a:hover {
         grid-column: 1/ span 3;
     }
 
-    .info p {
-        font-size: 0.9em;
+    .info > .category {
+        grid-column: 1/ span 4;
     }
 
-    
+    /*/////////////////////// CLASSES end ////////////////////////*/
 
-    .year {
-        grid-column: 4;
-        justify-self: end;
-        align-self: end;
+
+
+    /*///////////////////////// ID start //////////////////////////*/
+    #header-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .category {
-        grid-column: 1/ span4;
+    #header-list > p:last-child {
+        text-align: end;
     }
-    
+
     #grid {
         width: 100%;
         display: grid;
@@ -425,169 +561,226 @@ a:hover {
         margin: 0;
     }
 
+    #about {
+        max-width: 60%;
+        margin: 30px auto 30px auto;
+        border-radius: 16px;
+    }
+
     #logo-footer {
         margin: 0;
 
-        grid-column: 1 / 1;
-        grid-row: 2/2;
-        align-self: end;
-    }
-
-    #footer-social {
-        margin-bottom: 0;
-        display: block;
-
-    }
-
-    #footer-social a {
-        height: 40px;
-        width: 130px;
-        
-        display: block;
-        margin-bottom: 10px;
-        text-align: center;
     }
 
     #footer-about {
-        /* max-width: 400px; */
+        max-width: 400px;
         /* padding-bottom: 30px; */
         grid-column: 2 / span 2;
         grid-row: 1/ span 2;
     }
 
+    /*///////////////////////// ID end //////////////////////////*/
+
+    
 }
 
+/*/////////////// MOBILE HORIZONTAL(min-width: 768px) end /////////////////*/
+
+
+
+
+
+
+/*////////////////// DESKTOP (min-width: 1000px) start ////////////////////*/
 
 @media only screen and (min-width: 1000px) {
-    main {
-        max-width: 100%;
-       
-    }
+    
 
-    h2 {
-        font-size: 2.8em;
-        letter-spacing: -0.03em;
-    }
+    /*/////////////////// NAVIGATION start ////////////////////*/
 
-
-    footer {
-        padding: 50px 15px 20px 15px;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-    }
-
-
-    /* Classes styling */
-    .container {
+    .logo {
         height: 80px;
     }
 
+    .navbar > ul > li > a {
+        font-size: 1.3em;
+    }
+
+    /*/////////////////// NAVIGATION end ////////////////////*/
+
+
+    
+    /*//////////// HEADER, MAIN, SECTIONS start /////////////*/
+    header {
+        margin-top: 100px;
+    }
+    
+
+    main {
+        max-width: 100%;
+
+    }
+
+    section {
+        padding: 150px 0 100px 0;
+    }
+
+    /*///////////// HEADER, MAIN, SECTIONS end //////////////*/
+
+
+
+
+
+    /*//////////////////// TEXT start //////////////////////*/
+
+    h2 {
+        font-size: 4em;
+    }
+    
+
+    h4 {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 8vw;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    a {
+        font-size: 1.3em;
+    }
+
+
+    /*/////////////////////// TEXT end ////////////////////////*/
+
+
+
+
+
+    /*/////////////////// GRID start ////////////////////*/
     .info {
-        margin: 10px 10px 0 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 5px;
     }
 
     .info h3 {
-        grid-column: 1/ span 3;
+        width: 100%;
+        grid-column: 1/ span 7;
+        /* grid-row: 1/ span 2; */
+        font-size: 2.1vw;
+        /* font-size: 1.7em; */
     }
 
-    .year {
-        grid-column: 4;
-        justify-self: end;
+    .info > p {
+        font-size: 1.1vw;
     }
 
-    .category {
-        grid-column: 1/ span4;
+    .info > .year {
+        grid-column: 8;
+        grid-row: 1/ 1;
+        
     }
 
-
-    /* Id styling */
-
-    #logo {
-        height: 50px;
-    }
-
-    #hero {
+    .info > .category {
+        grid-column: 1/ span 8;
+        grid-row: 2/ 2;
+        
         max-width: 100%;
-        height: auto;
-    
-
-        padding-top: 250px;
-        overflow: hidden;
     }
 
-    #hero img{
-        width: 100%;
-    }
-    
-    #header-list {
-        margin-bottom: 150px;
-        /* max-width: 100%; */
+    /*//////////////////// GRID end /////////////////////*/
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10PX;
-    }
 
-    #header-list p {
-        margin: 0;
-        padding: 0 1px;
 
-        font-weight: 200;
-        font-size: 1.6em;
-    }
+
+    /*/////////////////// FOOTER start ////////////////////*/
+
     
-    
-    #grid {
-        width: 100%;
+    footer {
+        padding: 150px 20px 50px 20px;
+
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         column-gap: 10px;
-        row-gap: 20px;
-    }
-
-    #grid li img{
-        width: 100%;
-    }
-
-    #about {
-        max-width: 60%;
-        margin: 30px auto 30px auto;
-        padding: 20px 0;
-        font-size: 1.5em;
-        border-radius: 50px;
+    
     }
     
-    #logo-footer {
-        /* height: 130px; */
-       max-width: 350px;
+    footer h3 {
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
 
-        grid-column: 1 / span 2;
+    footer p {
+        margin: 0;
+    }
+
+    #logo-footer {
+        height: 100%;
+        margin: auto auto 0 auto;
+        max-height: 450px;
+
+        grid-column: 1 / 1;
+        grid-row: 1/ span 8;
     }
 
     #footer-social {
-        /* display: flex; */
-        /* justify-content: start; */
-        gap: 10px;
-
-        grid-column: 1 / span 2;
-        grid-row: 1/1;
+        margin: 0;
+        grid-column: 2 / 2;
+        grid-row: 1/ span 7;
+        
     }
 
     #footer-social a {
-        height: 40px;
         align-self: end;
     }
 
     #footer-about {
         /* padding-bottom: 30px; */
         grid-column: 3 / 3;
-        grid-row: 1/ span 2;
+        grid-row: 1/ span 7;
     }
 
+    #back-to-top {
+        grid-column: 2 / 2;
+        grid-row: 8 / 8;
+        align-self: end;
+    }
+
+    #copyright {
+        grid-column: 3 / 3;
+        grid-row: 8 / 8;
+        align-self: end;
+        font-size: 1em;
+    }
+
+    /*/////////////////// FOOTER end ////////////////////*/
+
+
+
+
+    /*/////////////////// ID start ////////////////////*/
+
+    #hero {
+        padding: 100px 0;
+    }
+
+    #header-list p {
+        font-size: 2.5em;
+    }
+
+    #about {
+        max-width: 33%;
+        margin: 100px auto 100px auto;
+        padding: 30px 0;
+        font-size: 1.5em;
+        border-radius: 32px;
+    }
+    /*/////////////////// ID end ////////////////////*/
 }
+
+/*////////////////// DESKTOP (min-width: 1000px) end ////////////////////*/
