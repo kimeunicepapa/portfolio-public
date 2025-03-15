@@ -1,3 +1,16 @@
+/*//////////////////   PP Right Grotesk font-face rules   //////////////////*/
+
+@font-face {
+    font-family: 'RightGroteskDark';
+    src: url(../fonts/PPRightGrotesk-CompactDark.woff);
+}
+
+@font-face {
+    font-family: 'RightGroteskMedium';
+    src: url(../fonts/PPRightGroteskText-CompactMedium.woff);
+}
+
+
 /* PP Object Sans font-face rules */
 
 @font-face {
@@ -55,7 +68,9 @@
     font-weight: 200;
 }
 
-/* Styling starts here */
+/*////////////////////////////// CSS STYLES //////////////////////////////////*/
+
+/*//////////////////// MOBILE (max-width: 768px) start //////////////////////*/
 
 * {
     box-sizing: border-box;
@@ -63,20 +78,63 @@
 
 body {
     background-color: #FCF7F7;
-    color: #110F10;
+    color: #101010;
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
 
-header {
-    /* max-width: ; */
-    margin-top: 80px;
+/*////////////////////// NAVIGATION start ///////////////////////*/
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+
+    background: inherit!important;
+    background-color: rgba(252, 247, 247, 0.2)!important;
+    backdrop-filter: blur(10px)!important;
+    -webkit-backdrop-filter: blur(10px)!important;
+    border-bottom: 1px solid #110F10;
+
+    display: flex;
+    justify-content: space-between
 }
 
-nav ul a {
-    font-family: 'EditorialNew';
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    height: 60px;
+    margin: 0;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar > ul > li > a {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+
+    font-family: 'RightGroteskMedium';
     font-size: 1.1em;
-    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/*////////////////////// NAVIGATION end ///////////////////////*/
+
+
+
+
+
+header {
+    /* max-width: ; */
+    margin-top: 150px;
 }
 
 main {
@@ -147,7 +205,7 @@ img {
 
 /* Footer styling */
 
-footer {
+/* footer {
     margin: 0;
     padding: 50px 10px 10px 10px;
 
@@ -156,13 +214,70 @@ footer {
 
 footer h3 {
     font-size: 1em;
+} */
+
+/*/////////////////////// FOOTER start ////////////////////////*/
+
+footer {
+    margin: 0;
+    padding: 50px 20px 20px 20px;
+
+    background-color: #BAB0D6;
 }
+
+footer h3 {
+    font-size: 1em;
+}
+
+footer a {
+    display: flex;
+
+    line-height: 1.1em;
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2em;
+}
+
+
+#logo-footer {
+    height: 100px;
+}
+
+#footer-social {
+    margin: 30px 0 50px 0;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+}
+
+#footer-social > p {
+    margin-bottom: 20px;
+
+    text-underline-offset: 0.2em;
+}
+
+#footer-social > a {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+
+#footer-about > p {
+    margin-bottom: 20px;
+
+    text-underline-offset: 0.2em;
+}
+
+#copyright {
+    margin: 50px 0 0 0;
+    font-size: 0.8em;
+}
+
+/*/////////////////////// FOOTER end ////////////////////////*/
 
 
 /* Classes styling */
 
-.container {
-    /* display: none; */
+/* .container {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -182,7 +297,6 @@ footer h3 {
 }
 
 .container .navbar ul li {
-    /* padding: 10px; */
     margin: 0 0 0 15px;
 }
 
@@ -203,17 +317,10 @@ footer h3 {
 
 .navbar ul {
     display: flex;
-}
+} */
 
 
-.social {
-    padding: 10px 25px 10px 25px;
-    border: 1px solid #110F10;
-    border-radius: 25px;
 
-    font-family: 'EditorialNew';
-    font-weight: 400;
-}
 
 .underlined {
     text-decoration: underline;
@@ -225,10 +332,7 @@ footer h3 {
    height: 30px;
 }
 
-#logo-footer {
-    max-width: 250px;
-    margin-top: 30px;
-}
+
 
 #self {
     display: none;
@@ -241,17 +345,12 @@ footer h3 {
     border: 1px solid;
     border-radius: 30px;
     text-align: center;
-    font-family: 'EditorialNew';
     font-size: 1.5em;
 
 }
 
 
-#footer-social {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /* Animation and interaction */
 
@@ -384,14 +483,6 @@ a:hover {
         display: block;
     }
 
-    #footer-social a {
-        height: 40px;
-        width: 130px;
-        
-        display: block;
-        margin-bottom: 10px;
-        text-align: center;
-    }
 
     #footer-about {
         /* max-width: 400px; */

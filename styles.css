@@ -224,7 +224,7 @@ li {
 }
 
 #grid > li {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -485,6 +485,7 @@ footer a:hover {
         letter-spacing: -0.02em;
     }
 
+
     h4 {
         font-size: 3.5em;
         line-height: 0.55em;
@@ -508,13 +509,40 @@ footer a:hover {
 
     /*/////////////////////// TEXT start ////////////////////////*/
 
+    /*/////////////////////// FOOTER start ////////////////////////*/
+    footer {
+        padding: 100px 20px 50px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    #logo-footer {
+        margin: 0;
+
+    }
+
+    #footer-about {
+        max-width: 400px;
+        /* padding-bottom: 30px; */
+        grid-column: 2 / span 2;
+        grid-row: 1/ span 2;
+    }
+
+    #copyright {
+        margin: auto 0 0 0;
+    }
+    /*//////////////////////// FOOTER end /////////////////////////*/
+
+
+
 
     /*/////////////////////// CLASSES start ////////////////////////*/
 
     /*//////// PROJECTS' INFO ///////*/
 
     .info {
-        margin: 10px 20px 0 20px;
+        margin: 0 20px 0 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -526,8 +554,12 @@ footer a:hover {
     }
 
     .info h3 {
-        font-size: 1.1em;
+        font-size: 2.2vw;
         grid-column: 1/ span 3;
+    }
+
+    .info p {
+        font-size: 1.4vw;
     }
 
     .info > .category {
@@ -549,17 +581,12 @@ footer a:hover {
     }
 
     #grid {
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
         row-gap: 20px;
     }
 
-    #grid img {
-        width: 100%;
-        margin: 0;
-    }
 
     #about {
         max-width: 60%;
@@ -567,17 +594,6 @@ footer a:hover {
         border-radius: 16px;
     }
 
-    #logo-footer {
-        margin: 0;
-
-    }
-
-    #footer-about {
-        max-width: 400px;
-        /* padding-bottom: 30px; */
-        grid-column: 2 / span 2;
-        grid-row: 1/ span 2;
-    }
 
     /*///////////////////////// ID end //////////////////////////*/
 
