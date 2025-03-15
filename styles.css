@@ -426,43 +426,6 @@ footer a {
 
 
 
-/*////////////// ANIMATION & INTERACTION start ///////////////*/
-
-#grid li:hover .info {
-    color: #B33031;
-    font-style: italic;
-}
-
-
-.navbar > ul > li > a:hover {
-    color: #B33031;
-    font-style: italic;
-}
-
-
-#about:hover {
-    background-color: #BAB0D6;
-    color: #101010;
-}
-
-#comingsoon a:hover {
-    background-color: #BAB0D6;
-    color: #101010;
-}
-
-#footer-social a:hover {
-    color: #FCF7F7;
-    font-style: italic;
-}
-
-footer a:hover {
-    color: #FCF7F7;
-    font-style: italic;
-}
-
-/*////////////// ANIMATION & INTERACTION end ///////////////*/
-
-
 
 /*/////////////// MOBILE HORIZONTAL(min-width: 768px) start /////////////////*/
 
@@ -795,6 +758,47 @@ footer a:hover {
         border-radius: 32px;
     }
     /*/////////////////// ID end ////////////////////*/
+
+
+
+
+    /*////////////// ANIMATION & INTERACTION start ///////////////*/
+
+    #grid li:hover .info {
+        color: #B33031;
+        font-style: italic;
+    }
+
+
+    .navbar > ul > li > a:hover {
+        color: #B33031;
+        font-style: italic;
+    }
+
+
+    #about:hover {
+        background-color: #BAB0D6;
+        color: #101010;
+    }
+
+    #comingsoon a:hover {
+        background-color: #BAB0D6;
+        color: #101010;
+    }
+
+    #footer-social a:hover {
+        color: #FCF7F7;
+        font-style: italic;
+    }
+
+    footer a:hover {
+        color: #FCF7F7;
+        font-style: italic;
+    }
+
+    /*////////////// ANIMATION & INTERACTION end ///////////////*/  
 }
 
 /*////////////////// DESKTOP (min-width: 1000px) end ////////////////////*/
+
+
