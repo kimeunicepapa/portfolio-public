@@ -275,8 +275,6 @@ footer a {
     display: flex;
 
     line-height: 1.1em;
-    text-decoration: underline 1px !important;
-    text-underline-offset: 0.2em;
 }
 
 
@@ -294,7 +292,6 @@ footer a {
 #footer-social > p {
     margin-bottom: 20px;
 
-    text-underline-offset: 0.2em;
 }
 
 #footer-social > a {
@@ -306,7 +303,6 @@ footer a {
 #footer-about > p {
     margin-bottom: 20px;
 
-    text-underline-offset: 0.2em;
 }
 
 #copyright {
@@ -354,7 +350,8 @@ footer a {
 /*///////////// OTHERS ///////////*/
 
 .underlined {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
+    text-underline-offset: 0.2em;
 }
 
 /*/////////////////////// CLASSES end ////////////////////////*/
