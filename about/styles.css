@@ -45,6 +45,7 @@
 
 /*//////////////////// MOBILE (max-width: 768px) start //////////////////////*/
 
+/*////////////////////// MUST COPY start ///////////////////////*/
 * {
     box-sizing: border-box;
 }
@@ -54,7 +55,49 @@ body {
     color: #101010;
     font-family: "Inter", sans-serif;
     font-weight: 300;
+    font-size: 16px;
 }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+p {
+    max-width: 33em;
+    font-size: 1.125em;
+    line-height: 1.3em;
+}
+
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: #101010;
+    font-size: 1.125em;
+}
+
+a[href^="mailto:"] {
+    font-size: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+
+/*////////////////////// MUST COPY end ///////////////////////*/
+
+
+
+
 
 /*////////////////////// NAVIGATION start ///////////////////////*/
 
@@ -74,7 +117,7 @@ body {
     border-bottom: 1px solid #110F10;
 
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .logo {
@@ -90,12 +133,14 @@ body {
 }
 
 .navbar > ul > li > a {
+    text-decoration: none;
+    color: #101010;
     display: inline-block;
     vertical-align: bottom;
     margin-left: 20px;
 
     font-family: 'RightGroteskMedium';
-    font-size: 1.1em;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
@@ -173,8 +218,8 @@ h5 {
 
 p {
     margin: 20px 0;
-    font-size: 1.1em;
-    line-height: 1.3em;
+    /* font-size: 1.1em;
+    line-height: 1.3em; */
 }
 
 /*//////////////  LIST ////////////////*/
@@ -210,8 +255,22 @@ img {
 
 /*/////////////////////// IMAGES end ////////////////////////*/
 
+/*/////////////////////// THANK YOU start ////////////////////////*/
+#thankyou-box {
+    margin: 100px 0 0 0;
+}
 
+#thankyou {
+    margin: 0;
 
+    font-family: 'EditorialNew';
+    font-weight: 200;
+    font-size: 8vw;
+    line-height: 4.4vw;
+    text-align: center;
+}
+
+/*/////////////////////// THANK YOU end ////////////////////////*/
 
 /*/////////////////////// FOOTER start ////////////////////////*/
 
@@ -222,11 +281,19 @@ footer {
     background-color: #BAB0D6;
 }
 
-footer h3 {
-    font-size: 1em;
+
+
+footer h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    font-size: 1.125em;
 }
 
 footer a {
+    display: inline;
+    text-decoration: underline 1px solid #101010 !important;
+    text-underline-offset: 0.2em;
     display: flex;
 
     line-height: 1.1em;
@@ -238,6 +305,8 @@ footer a {
 }
 
 #footer-social {
+    display: flex;
+    flex-direction: column;
     margin: 30px 0 50px 0;
     /* display: flex; */
     /* justify-content: space-between; */
@@ -245,30 +314,30 @@ footer a {
 }
 
 #footer-social > p {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 }
 
 #footer-social > a {
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    margin-bottom: 20px;
     
 }
 
 #footer-about > p {
+    max-width: 33em;
     margin-bottom: 20px;
 
 }
 
 #copyright {
     margin: 50px 0 0 0;
-    font-size: 0.8em;
+    font-size: 0.875em;
 }
 
-.underlined {
+/* .underlined {
     text-decoration: underline 1px solid #101010 !important;
     text-underline-offset: 0.2em;
-}
+} */
 
 /*/////////////////////// FOOTER end ////////////////////////*/
 
@@ -298,22 +367,30 @@ footer a {
     margin: 10px 0 30px 0;
 }
 
-#work { 
+
+
+/*///////////////////////// ID end //////////////////////////*/
+
+/*///////////////////////// BUTTON start //////////////////////////*/
+
+
+#work {
     display: block;
-    margin: 50px 0;
+    margin: 50px 20px;
     padding: 30px 0;
 
     background-color: #101010;
-    color: #FCF7F7;
     border-radius: 16px;
+
+    color: #FCF7F7;
+    font-size: 1.25em;
     text-align: center;
     font-family: 'RightGroteskMedium';
     text-transform: uppercase;
 }
 
-/*///////////////////////// ID end //////////////////////////*/
 
-
+/*///////////////////////// BUTTON end //////////////////////////*/
 
 /* Animation and interaction */
 
@@ -372,7 +449,6 @@ a:hover {
     }
     
     p {
-        max-width: 600px;
         font-size: 1em;
     }
 
@@ -467,7 +543,7 @@ a:hover {
     }
 
     #footer-about {
-        max-width: 400px;
+        max-width: 33em;
         /* padding-bottom: 30px; */
         grid-column: 2 / span 2;
         grid-row: 1/ span 2;
@@ -629,7 +705,6 @@ a:hover {
     }
 
     #footer-social a {
-        align-self: end;
 
         text-decoration: underline 1px solid #101010;
     }
