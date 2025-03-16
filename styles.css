@@ -703,6 +703,10 @@ footer a {
         font-size: 8vw;
     }
 
+    footer h6 {
+        font-size: 1.25em;
+    }
+
     p {
         font-size: 1.25em;
     }
