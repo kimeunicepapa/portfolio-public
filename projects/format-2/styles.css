@@ -85,6 +85,7 @@ a {
     display: inline;
     text-decoration: none;
     color: #101010;
+    
     font-size: 1.125em;
 }
 
@@ -212,12 +213,10 @@ footer h6 {
 }
 
 footer a {
-    display: inline;
-    text-decoration: underline 1px solid #101010 !important;
+    
     text-underline-offset: 0.2em;
-    display: flex;
-
     line-height: 1.1em;
+    text-decoration: underline 1px solid #101010 !important;
 }
 
 
@@ -228,10 +227,9 @@ footer a {
 #footer-social {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin: 30px 0 50px 0;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* gap: 10px; */
+
 }
 
 #footer-social > p {
@@ -240,6 +238,7 @@ footer a {
 }
 
 #footer-social > a {
+    display: inline;
     margin-bottom: 20px;
     
 }
@@ -253,6 +252,11 @@ footer a {
 #copyright {
     margin: 50px 0 0 0;
     font-size: 0.875em;
+}
+
+footer > #back-to-top {
+    display: inline-block !important; /* Keeps it as inline text */
+    margin: 0 auto 0 0; /* Ensures no unwanted margins */
 }
 
 /* .underlined {
@@ -326,6 +330,7 @@ footer a {
     }
 
     #footer-about {
+        max-width: 33em;
         /* padding-bottom: 30px; */
         grid-column: 2 / span 2;
         grid-row: 1/ span 2;
@@ -349,7 +354,6 @@ footer a {
     #about {
         max-width: 60%;
         margin: 50px auto 30px auto;
-        border-radius: 16px;
     }
 
 
@@ -420,6 +424,14 @@ footer a {
 /*////////////////// DESKTOP (min-width: 1200px) start ////////////////////*/
 
 @media only screen and (min-width: 1200px) {
+
+    /*/////////////////// NAVIGATION start ////////////////////*/
+
+    .logo {
+        height: 80px;
+    }
+
+    /*/////////////////// NAVIGATION end ////////////////////*/
     
     /*/////////////////////// TEXT start ////////////////////////*/
 
@@ -439,20 +451,6 @@ footer a {
 
 
 
-
-
-    /*/////////////////// NAVIGATION start ////////////////////*/
-
-    .logo {
-        height: 80px;
-    }
-
-    /*/////////////////// NAVIGATION end ////////////////////*/
-
-
-
-
-
     
     /*//////////// HEADER, MAIN, SECTIONS start \\\\\\\\\\\\\\*/
     header {
@@ -461,6 +459,21 @@ footer a {
 
     /*\\\\\\\\\\\\\ HEADER, MAIN, SECTIONS end //////////////*/
 
+
+
+
+    /*/////////////////// BUTTON start \\\\\\\\\\\\\\\\\*/
+
+
+    #about {
+        max-width: 50%;
+        margin: 70px auto 150px auto;
+        padding: 30px 0;
+        font-size: 2em;
+    }
+
+
+    /*\\\\\\\\\\\\\\\\\ BUTTON end ////////////////////*/
 
 
 
@@ -497,6 +510,7 @@ footer a {
     }
 
     #footer-social {
+
         margin: 0;
         grid-column: 2 / 2;
         grid-row: 1/ span 7;
@@ -514,13 +528,12 @@ footer a {
         grid-row: 1/ span 7;
     }
 
-    #back-to-top {
+    /* #back-to-top {
         grid-column: 2 / 2;
         grid-row: 8 / 8;
         align-self: end;
 
-        text-decoration: underline 1px solid #101010;
-    }
+    } */
 
     #copyright {
         grid-column: 3 / 3;
@@ -538,20 +551,7 @@ footer a {
 
 
 
-    /*/////////////////// BUTTON start \\\\\\\\\\\\\\\\\*/
-
-
-    #about {
-        max-width: 50%;
-        margin: 100px auto 100px auto;
-        padding: 30px 0;
-        font-size: 2em;
-        border-radius: 16px;
-    }
-
-
-    /*\\\\\\\\\\\\\\\\\ BUTTON end ////////////////////*/
-
+    
 
 
 

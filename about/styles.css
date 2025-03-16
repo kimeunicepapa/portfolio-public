@@ -235,9 +235,6 @@ li {
 }
 
 
-a[href^="mailto:"] {
-    font-size: 1em;
-}
 
 
 /*/////////////////////// TEXT end ////////////////////////*/
@@ -291,12 +288,10 @@ footer h6 {
 }
 
 footer a {
-    display: inline;
-    text-decoration: underline 1px solid #101010 !important;
+    
     text-underline-offset: 0.2em;
-    display: flex;
-
     line-height: 1.1em;
+    text-decoration: underline 1px solid #101010 !important;
 }
 
 
@@ -307,10 +302,9 @@ footer a {
 #footer-social {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin: 30px 0 50px 0;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* gap: 10px; */
+
 }
 
 #footer-social > p {
@@ -319,6 +313,7 @@ footer a {
 }
 
 #footer-social > a {
+    display: inline;
     margin-bottom: 20px;
     
 }
@@ -334,12 +329,18 @@ footer a {
     font-size: 0.875em;
 }
 
+footer > #back-to-top {
+    display: inline-block !important; /* Keeps it as inline text */
+    margin: 0 auto 0 0; /* Ensures no unwanted margins */
+}
+
 /* .underlined {
     text-decoration: underline 1px solid #101010 !important;
     text-underline-offset: 0.2em;
 } */
 
 /*/////////////////////// FOOTER end ////////////////////////*/
+
 
 
 
@@ -392,32 +393,6 @@ footer a {
 
 /*///////////////////////// BUTTON end //////////////////////////*/
 
-/* Animation and interaction */
-
-li:hover {
-    color: #57506c;
-}
-
-a:hover {
-    color: #7C7397;
-}
-
-#work:hover {
-    color: #FCF7F7;
-    background-color: #110F10;
-}
-
-.social:hover {
-    color: #FCF7F7;
-    background-color: #110F10;
-}
-
-#footer-about a:hover {
-    color: #FCF7F7;
-}
-
-
-
 
 
 
@@ -443,27 +418,13 @@ a:hover {
         display: block;
     }
 
-    h4 {
-        font-size: 3.5em;
-        line-height: 0.55em;
-    }
-    
-    p {
-        font-size: 1em;
-    }
+
 
     p:first-child {
         margin-top: 0;
     }
 
-    a {
-        font-size: 1.1em;
-    }
-
-    a[href^="mailto:"] {
-        font-size: 1.1em;
-    }
-
+    
     /*/////////////////////// TEXT end ////////////////////////*/
 
 
@@ -510,14 +471,15 @@ a:hover {
         margin: 10px 0 20px 0;
     }
 
+    /*///////////////////////// BUTTON start //////////////////////////*/
+
     #work {
-       width: 60%;
-        margin: 50px auto 30px auto;
-
-        grid-column: 1/ span 6;
-
-        border-radius: 16px;
+        max-width: 60%;
+        margin: 50px auto 50px auto;
     }
+
+
+    /*///////////////////////// BUTTON end //////////////////////////*/
 
 
     /*/////////////////////// FOOTER start ////////////////////////*/
@@ -528,15 +490,7 @@ a:hover {
         column-gap: 10px;
     }
 
-    /* footer p {
-        font-size: 1em;
-    }
-
-    
-    footer a {
-        font-size: 1em;
-    } */
-
+   
     #logo-footer {
         margin: 0;
 
@@ -554,9 +508,11 @@ a:hover {
     }
     /*//////////////////////// FOOTER end /////////////////////////*/
 
-    /*////////////// ANIMATION & INTERACTION start ///////////////*/
 
-    #grid li:hover .info {
+
+     /*////////////// ANIMATION & INTERACTION start ///////////////*/
+
+     #grid li:hover .info {
         color: #B33031;
         font-style: italic;
     }
@@ -566,9 +522,14 @@ a:hover {
         color: #B33031;
         font-style: italic;
     }
+/* 
+    .navbar > ul > li > a:focus {
+        color: #B33031;
+        font-style: italic;
+    } */
 
 
-    #work:hover {
+    #about:hover {
         background-color: #BAB0D6;
         color: #101010;
     }
@@ -597,6 +558,7 @@ a:hover {
 
 
     /*////////////// ANIMATION & INTERACTION end ///////////////*/  
+    
 
 }
 
@@ -612,6 +574,15 @@ a:hover {
 
 @media only screen and (min-width: 1200px) {
 
+    /*/////////////////// NAVIGATION start ////////////////////*/
+
+    .logo {
+        height: 80px;
+    }
+
+    /*/////////////////// NAVIGATION end ////////////////////*/
+
+
      /*//////////////////// TEXT start //////////////////////*/
 
      h2 {
@@ -626,14 +597,25 @@ a:hover {
     }
 
     p {
-        font-size: 1.3em;
+        font-size: 1.25em;
     }
 
     a {
-        font-size: 1.3em;
+        font-size: 1.25em;
+    }
+
+    footer h6 {
+        font-size: 1.25em;
     }
 
     /*/////////////////////// TEXT end ////////////////////////*/
+
+    /*//////////// HEADER, MAIN, SECTIONS start \\\\\\\\\\\\\\*/
+     header {
+        margin-top: 170px;
+    }
+
+    /*\\\\\\\\\\\\\ HEADER, MAIN, SECTIONS end //////////////*/
 
 
     
@@ -658,18 +640,28 @@ a:hover {
         letter-spacing: -0.03em;
     }
 
-    main #work {
+
+
+
+
+    /*/////////////////// BUTTON start \\\\\\\\\\\\\\\\\*/
+
+
+    #work {
         max-width: 50%;
-        margin: 100px auto 100px auto;
+        margin: 70px auto 150px auto;
         padding: 30px 0;
-        font-size: 1.5em;
-        border-radius: 16px;
+        font-size: 2em;
     }
-    
-    /*/////////////////// FOOTER start ////////////////////*/
+
+
+    /*\\\\\\\\\\\\\\\\\ BUTTON end ////////////////////*/
 
     
-    footer {
+    /*/////////////////// FOOTER start \\\\\\\\\\\\\\\\\\\\\\*/
+
+    
+      footer {
         padding: 150px 20px 50px 20px;
 
         display: grid;
@@ -734,7 +726,7 @@ a:hover {
         text-decoration: none;
     }
 
-    /*/////////////////// FOOTER end ////////////////////*/
+    /*\\\\\\\\\\\\\\\\\ FOOTER end ////////////////////*/
 
 }
 
