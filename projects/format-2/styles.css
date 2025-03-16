@@ -2,40 +2,40 @@
 
 @font-face {
     font-family: 'RightGroteskDark';
-    src: url(fonts/PPRightGrotesk-CompactDark.woff);
+    src: url(../../fonts/PPRightGrotesk-CompactDark.woff);
 }
 
 @font-face {
     font-family: 'RightGroteskMedium';
-    src: url(fonts/PPRightGroteskText-CompactMedium.woff);
+    src: url(../../fonts/PPRightGroteskText-CompactMedium.woff);
 }
 
 /*//////////////////  PP Editorial New font-face rules   //////////////////*/
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(fonts/ppeditorialnew-regular.woff);
+    src: url(../../fonts/ppeditorialnew-regular.woff);
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(fonts/ppeditorialnew-italic.woff);
+    src: url(../../fonts/ppeditorialnew-italic.woff);
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(fonts/ppeditorialnew-ultralight.woff);
+    src: url(../../fonts/ppeditorialnew-ultralight.woff);
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'EditorialNew';
-    src: url(fonts/ppeditorialnew-ultralightitalic.woff);
+    src: url(../../fonts/ppeditorialnew-ultralightitalic.woff);
     font-style: italic;
     font-weight: 200;
 }
@@ -43,7 +43,12 @@
 
 /*////////////////////////////// CSS STYLES //////////////////////////////////*/
 
+
+
+
 /*//////////////////// MOBILE (max-width: 768px) start //////////////////////*/
+
+
 
 /*////////////////////// MUST COPY start ///////////////////////*/
 * {
@@ -148,7 +153,7 @@ h1 {
 /*/////////////// HEADER, MAIN, SECTIONS start ////////////////*/
 
 header {
-    margin-top: 150px;
+    margin: 150px 10px 0 20px;
 }
 
 
@@ -158,7 +163,7 @@ main {
 }
 
 section {
-    padding: 100px 0;
+    margin: 20px;
 }
 
 /*/////////////// HEADER, MAIN, SECTIONS end ////////////////*/
@@ -166,167 +171,6 @@ section {
 
 
 
-/*/////////////////////// TEXT start ////////////////////////*/
-
-/*//////// HEADINGS, PARAGRAPH ///////*/
-h1 {
-    margin: 0;
-}
-
-h1 > #kim-mobile {
-    display: block;
-}
-
-
-
-h1 > #kim-desktop {
-    display: none;
-}
-
-
-h2 {
-    margin: 10px 20px;
-
-    font-family: 'EditorialNew';
-    font-size: 2.3em;
-    font-weight: 200;
-}
-
-h3 {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    margin: 0;
-    font-size: 1em;
-}
-
-h4 {
-    margin: 0;
-
-    font-family: 'EditorialNew';
-    font-weight: 200;
-    font-size: 1.8em;
-    line-height: 0.5em;
-    text-align: center;
-}
-
-/* p {
-    margin: 10px 0;
-    font-size: 1.1em;
-    line-height: 1.3em;
-} */
-
-#header-list > p {
-    margin-top: 10px;
-
-    font-family: 'EditorialNew';
-    font-weight: 200;
-    font-size: 1.5em;
-    line-height: 90%;
-}
-
-
-
-
-/*//////////////  LIST ////////////////*/
-
-#grid > li {
-    margin-bottom: 40px;
-}
-
-
-/*/////////////////////// TEXT end ////////////////////////*/
-
-
-
-
-
-/*/////////////////////// IMAGES start ////////////////////////*/
-h1 > img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-/*/////////////////////// IMAGES end ////////////////////////*/
-
-
-
-
-
-/*/////////////////////// CLASSES start ////////////////////////*/
-
-/*//////// PROJECTS' INFO ///////*/
-
-.info {
-    margin: 0 20px 0 20px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5px;
-}
-
-.info img {
-    margin-bottom: 5px;
-}
-
-.info > p {
-    margin: 0;
-
-    font-size: 0.8em;
-}
-
-.info > .category {
-    grid-column: 1 / span 2;
-
-    text-transform: uppercase;
-}
-
-.info > .year {
-    text-align: end;
-}
-
-/*///////////// OTHERS ///////////*/
-
-
-/*/////////////////////// CLASSES end ////////////////////////*/
-
-
-
-
-
-/*///////////////////////// ID start //////////////////////////*/
-
-#hero {
-    margin: 0 20px;
-}
-
-#grid img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-
-/*///////////////////////// ID end //////////////////////////*/
-
-/*///////////////////////// BUTTON start //////////////////////////*/
-
-
-#about {
-    display: block;
-    margin: 50px 20px;
-    padding: 30px 0;
-
-    background-color: #101010;
-    border-radius: 16px;
-
-    color: #FCF7F7;
-    font-size: 1.25em;
-    text-align: center;
-    font-family: 'RightGroteskMedium';
-    text-transform: uppercase;
-}
-
-
-/*///////////////////////// BUTTON end //////////////////////////*/
 
 /*/////////////////////// THANK YOU start ////////////////////////*/
 #thankyou-box {
@@ -344,6 +188,9 @@ h1 > img {
 }
 
 /*/////////////////////// THANK YOU end ////////////////////////*/
+
+
+
 
 /*/////////////////////// FOOTER start ////////////////////////*/
 
@@ -412,36 +259,33 @@ footer a {
 /*/////////////////////// FOOTER end ////////////////////////*/
 
 
-/*///////////////////// ERROR PAGE start //////////////////////*/
+/*///////////////////////// BUTTON start //////////////////////////*/
 
-#comingsoon {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
 
-#comingsoon h1 {
-    font-family: 'RightGroteskDark';
-    font-size: 3em;
-    /* letter-spacing: 0.05em; */
-}
-
-#comingsoon a {
-    width: 200px;
+#about {
     display: block;
-    margin: 30px auto;
-    padding: 20px 0;
-    border-radius: 16px;
+    margin: 50px 20px;
+    padding: 30px 0;
 
     background-color: #101010;
-    color: #FCF7F7;
+    border-radius: 16px;
 
-    font-family: 'RightGroteskMedium';
+    color: #FCF7F7;
+    font-size: 1.25em;
     text-align: center;
+    font-family: 'RightGroteskMedium';
     text-transform: uppercase;
 }
 
-/*///////////////////// ERROR PAGE end //////////////////////*/
+
+/*///////////////////////// BUTTON end //////////////////////////*/
+
+/*/////////////////////// TEXT start ////////////////////////*/
+
+
+
+/*/////////////////////// TEXT end ////////////////////////*/
+
 
 
 /*//////////////////// MOBILE (max-width: 768px) end //////////////////////*/
@@ -457,41 +301,6 @@ footer a {
 /*/////////////// MOBILE HORIZONTAL(min-width: 768px) start /////////////////*/
 
 @media only screen and (min-width: 768px) {
-
-    /*/////////////////////// TEXT start ////////////////////////*/
-
-    h1 > #kim-mobile {
-        display: none;
-    }
-    
-    h1 > #kim-desktop {
-        display: block;
-    }
-
-    h2 {
-        font-size: 2.2em;
-        letter-spacing: -0.02em;
-    }
-
-
-    h4 {
-        font-size: 3.5em;
-        line-height: 0.55em;
-    }
-
-
-    #grid > li {
-        margin-bottom: 0;
-    }
-
-   
-
-    /* a[href^="mailto:"] {
-        font-size: 1em;
-    } */
-
-    /*/////////////////////// TEXT start ////////////////////////*/
-
 
 
 
@@ -522,60 +331,10 @@ footer a {
 
 
 
-    /*/////////////////////// CLASSES start ////////////////////////*/
-
-    /*//////// PROJECTS' INFO ///////*/
-
-    .info {
-        margin: 0 20px 0 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 5px;
-    }
-
-    .info img {
-        margin: 0;
-    }
-
-    .info h3 {
-        font-size: 2.2vw;
-        grid-column: 1/ span 3;
-    }
-
-    .info p {
-        font-size: 1.3vw;
-    }
-
-    .info > .category {
-        grid-column: 1/ span 4;
-    }
-
-    /*/////////////////////// CLASSES end ////////////////////////*/
 
 
 
 
-    /*///////////////////////// ID start //////////////////////////*/
-    #header-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #header-list > p:last-child {
-        text-align: end;
-    }
-
-    #grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 20px;
-    }
-
-
-
-    /*///////////////////////// ID end //////////////////////////*/
 
     /*///////////////////////// BUTTON start //////////////////////////*/
 
@@ -587,6 +346,8 @@ footer a {
 
 
     /*///////////////////////// BUTTON end //////////////////////////*/
+
+
 
 
 
@@ -602,12 +363,11 @@ footer a {
         color: #B33031;
         font-style: italic;
     }
-
-    
+/* 
     .navbar > ul > li > a:focus {
         color: #B33031;
         font-style: italic;
-    }
+    } */
 
 
     #about:hover {
@@ -652,52 +412,8 @@ footer a {
 /*////////////////// DESKTOP (min-width: 1200px) start ////////////////////*/
 
 @media only screen and (min-width: 1200px) {
-
-    /*/////////////////// NAVIGATION start ////////////////////*/
-
-    .logo {
-        height: 80px;
-    }
-
     
-
-    /*/////////////////// NAVIGATION end ////////////////////*/
-
-
-    
-    /*//////////// HEADER, MAIN, SECTIONS start /////////////*/
-    header {
-        margin-top: 200px;
-    }
-    
-
-    main {
-        max-width: 100%;
-
-    }
-
-    section {
-        padding: 150px 0 100px 0;
-    }
-
-    /*///////////// HEADER, MAIN, SECTIONS end //////////////*/
-
-
-
-
-
-    /*//////////////////// TEXT start //////////////////////*/
-
-    h2 {
-        font-size: 4em;
-    }
-    
-
-    h4 {
-        width: 100%;
-        padding: 0 20px;
-        font-size: 8vw;
-    }
+    /*/////////////////////// TEXT start ////////////////////////*/
 
     p {
         font-size: 1.25em;
@@ -707,55 +423,40 @@ footer a {
         font-size: 1.25em;
     }
 
-
-    /*/////////////////////// TEXT end ////////////////////////*/
-
+    /*/////////////////////// TEXT start ////////////////////////*/
 
 
 
 
-    /*/////////////////// GRID start ////////////////////*/
-    .info {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 5px;
+
+    /*/////////////////// NAVIGATION start ////////////////////*/
+
+    .logo {
+        height: 80px;
     }
 
-    .info h3 {
-        width: 100%;
-        grid-column: 1/ span 7;
-        /* grid-row: 1/ span 2; */
-        font-size: 2.1vw;
-        /* font-size: 1.7em; */
-    }
-
-    .info > p {
-        font-size: 0.9vw;
-    }
-
-    .info > .year {
-        grid-column: 8;
-        grid-row: 1/ 1;
-        
-    }
-
-    .info > .category {
-        grid-column: 1/ span 8;
-        grid-row: 2/ 2;
-        
-        max-width: 100%;
-    }
-
-    /*//////////////////// GRID end /////////////////////*/
+    /*/////////////////// NAVIGATION end ////////////////////*/
 
 
 
 
-      /*/////////////////// FOOTER start \\\\\\\\\\\\\\\\\\\\\\*/
 
     
-      footer {
+    /*//////////// HEADER, MAIN, SECTIONS start \\\\\\\\\\\\\\*/
+    header {
+        margin-top: 170px;
+    }
+
+    /*\\\\\\\\\\\\\ HEADER, MAIN, SECTIONS end //////////////*/
+
+
+
+
+
+    /*/////////////////// FOOTER start \\\\\\\\\\\\\\\\\\\\\\*/
+
+    
+    footer {
         padding: 150px 20px 50px 20px;
 
         display: grid;
@@ -843,24 +544,9 @@ footer a {
 
 
 
-    /*/////////////////// ID start ////////////////////*/
-
-    /* #hero {
-        padding: 100px 0;
-    } */
-
-    #header-list p {
-        font-size: 2.5em;
-    }
-
-    /*/////////////////// ID end ////////////////////*/
-
-
-
-
     
 }
 
-/*////////////////// DESKTOP (min-width: 1200px) end ////////////////////*/
+/*\\\\\\\\\\\\\\\\\ DESKTOP (min-width: 1200px) end ////////////////////*/
 
 
