@@ -82,6 +82,7 @@ p {
 
 
 a {
+    display: inline;
     text-decoration: none;
     color: #101010;
     font-size: 1.125em;
@@ -211,6 +212,7 @@ footer h6 {
 }
 
 footer a {
+    display: inline;
     text-decoration: underline 1px solid #101010 !important;
     text-underline-offset: 0.2em;
     display: flex;
@@ -224,6 +226,8 @@ footer a {
 }
 
 #footer-social {
+    display: flex;
+    flex-direction: column;
     margin: 30px 0 50px 0;
     /* display: flex; */
     /* justify-content: space-between; */
@@ -492,7 +496,6 @@ footer a {
     }
 
     #footer-social a {
-        align-self: end;
 
         text-decoration: underline 1px solid #101010;
     }

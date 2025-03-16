@@ -77,6 +77,7 @@ p {
 
 
 a {
+    
     text-decoration: none;
     color: #101010;
     font-size: 1.125em;
@@ -271,7 +272,7 @@ h1 > img {
 .info > p {
     margin: 0;
 
-    font-size: 0.8em;
+    font-size: 0.7777778em;
 }
 
 .info > .category {
@@ -364,9 +365,10 @@ footer h6 {
 }
 
 footer a {
+    display: inline;
     text-decoration: underline 1px solid #101010 !important;
     text-underline-offset: 0.2em;
-    display: flex;
+    
 
     line-height: 1.1em;
 }
@@ -377,6 +379,8 @@ footer a {
 }
 
 #footer-social {
+    display: flex;
+    flex-direction: column;
     margin: 30px 0 50px 0;
     /* display: flex; */
     /* justify-content: space-between; */
@@ -731,7 +735,7 @@ footer a {
     }
 
     .info > p {
-        font-size: 0.9vw;
+        font-size: 0.8em;
     }
 
     .info > .year {
@@ -791,7 +795,6 @@ footer a {
     }
 
     #footer-social a {
-        align-self: end;
 
         text-decoration: underline 1px solid #101010;
     }
