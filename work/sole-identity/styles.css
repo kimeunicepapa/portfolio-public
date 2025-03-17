@@ -285,7 +285,7 @@ footer > #back-to-top {
 #buttons {
     
     
-    margin: 90px 10px 100px 10px;
+    margin: 90px 20px 100px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
@@ -306,6 +306,10 @@ footer > #back-to-top {
 #buttons #next{
     
     text-align: right;
+}
+
+#buttons #previous{
+    visibility: hidden;
 }
 
 
