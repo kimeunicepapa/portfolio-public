@@ -1,31 +1,16 @@
-/* PP Object Sans font-face rules */
+/*//////////////////   PP Right Grotesk font-face rules   //////////////////*/
 
 @font-face {
-    font-family: 'ObjectSans';
-    src: url(../../fonts/ppobjectsans-regular.woff);
-
+    font-family: 'RightGroteskDark';
+    src: url(../../fonts/PPRightGrotesk-CompactDark.woff);
 }
 
 @font-face {
-    font-family: 'ObjectSans';
-    src: url(../../fonts/ppobjectsans-slanted.woff);
-    font-style: italic;
+    font-family: 'RightGroteskMedium';
+    src: url(../../fonts/PPRightGroteskText-CompactMedium.woff);
 }
 
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(../../fonts/ppobjectsans-bold.woff);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'ObjectSans';
-    src: url(../../fonts/ppobjectsans-boldslanted.woff);
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* PP Editorial New font-face rules */
+/*//////////////////  PP Editorial New font-face rules   //////////////////*/
 
 @font-face {
     font-family: 'EditorialNew';
@@ -55,58 +40,30 @@
     font-weight: 200;
 }
 
-/* Styling starts here */
+
+/*////////////////////////////// CSS STYLES //////////////////////////////////*/
+
+
+
+
+/*//////////////////// MOBILE (max-width: 768px) start //////////////////////*/
+
+
+
+/*////////////////////// MUST COPY start ///////////////////////*/
 
 * {
     box-sizing: border-box;
 }
 
 body {
+
     background-color: #FCF7F7;
-    color: #110F10;
-    font-family: 'ObjectSans';
-
-    cursor: url('../../images/cursor-black.png'), auto;
+    color: #101010;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
 }
-
-header {
-    /* max-width: ; */
-    margin-top: 80px;
-}
-
-nav ul a {
-    font-family: 'EditorialNew';
-    font-size: 1.1em;
-    letter-spacing: 0.03em;
-}
-
-main {
-    max-width: 100%;
-    /* margin: 0 10px; */
-}
-
-section {
-    /* width: 100%; */
-    margin: 30px 0 0 0;
-
-    /* padding: 50px 0 30px 0; */
-}
-
-h1 {
-    margin: 0 10px 10px 10px;
-
-    font-size: 4.5em;
-    line-height: 1.1em;
-    /* text-align: center; */
-}
-
-h2 {
-    margin: 10px 0 5px 0;
-    font-family: 'ObjectSans';
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
 
 ul{
     list-style-type: none;
@@ -118,433 +75,711 @@ li {
     list-style-type: none;
 }
 
+
+p {
+    max-width: 33em;
+    font-size: 1.125em;
+    line-height: 1.3em;
+}
+
+
 a {
+    display: inline;
     text-decoration: none;
-    color:#200604;
-    font-size: 1.1em;
+    color: #101010;
+
+    font-size: 1.125em;
 }
 
 a[href^="mailto:"] {
     font-size: 1em;
 }
 
-p {
-    max-width: 600px;
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 1.1em;
-}
+
+/*////////////////////// MUST COPY end ///////////////////////*/
 
 
-img {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-}
+/*////////////////////// NAVIGATION start ///////////////////////*/
 
-section img {
-    margin-bottom: 10px;
-}
-
-#hero img {
-    margin-bottom: 10px;
-}
-
-/* Footer styling */
-
-footer {
-    margin: 0;
-    padding: 50px 10px 10px 10px;
-
-    background-color: #9C95B0;
-}
-
-footer h3 {
-    font-size: 1em;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-
-/* Classes styling */
-
-.container {
-    /* display: none; */
+.navbar {
     overflow: hidden;
     position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
-    height: 60px;
-    padding: 0 10px;
+    height: auto;
+    padding: 20px 20px 10px 20px;
 
     background: inherit!important;
     background-color: rgba(252, 247, 247, 0.2)!important;
     backdrop-filter: blur(10px)!important;
     -webkit-backdrop-filter: blur(10px)!important;
     border-bottom: 1px solid #110F10;
-}
 
-.container .navbar {
+    display: flex;
     justify-content: space-between;
 }
 
-.container .navbar ul li {
-    /* padding: 10px; */
-    margin: 0 0 0 15px;
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    height: 60px;
+    margin: 0;
 }
 
-
-.container .navbar ul li img{
-    margin-right: 1px;
-}
-
-.navbar {
+.navbar > ul {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 10px;
 }
 
-.navbar ul {
-    display: flex;
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: #101010;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+
+    font-family: 'RightGroteskMedium';
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+/*////////////////////// NAVIGATION end ///////////////////////*/
+
+
+
+
+/*/////////////// HEADER, MAIN, SECTIONS start ////////////////*/
+
+header {
+    margin: 150px 20px 0 20px;
 }
 
 
-.social {
-    padding: 10px 25px 10px 25px;
-    border: 1px solid #110F10;
-    border-radius: 25px;
+main {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 20px;
+}
+
+/*/////////////// HEADER, MAIN, SECTIONS end ////////////////*/
+
+
+
+
+
+/*/////////////////////// THANK YOU start ////////////////////////*/
+#thankyou-box {
+    margin: 100px 0 0 0;
+}
+
+#thankyou {
+    margin: 0;
 
     font-family: 'EditorialNew';
-    font-weight: 400;
-}
-
-.underlined {
-    text-decoration: underline;
-    margin-bottom: 10px;
-
-}
-
-.text {
-    margin: 20px 10px 30px 10px;
-    /* text-align: center; */
-}
-
-.text h2 {
-    font-size: 2em;
-}
-
-/* .text p {
-    margin: 0 auto 10px auto;
-} */
-
-.hidden {
-    visibility: hidden;
-}
-
-/* Id styling */
-
-#logo {
-   height: 30px;
-}
-
-#intro {
-    margin: 20px 10px;
-}
-
-#overview h2 {
-    font-size: 2em;
-}
-
-#end {
-    margin-bottom: 50px;
+    font-weight: 200;
+    font-size: 7.6vw;
+    line-height: 4.2vw;
     text-align: center;
 }
 
-#end p {
-    margin: 0 auto 5px auto;
+/*/////////////////////// THANK YOU end ////////////////////////*/
+
+
+
+
+/*/////////////////////// FOOTER start ////////////////////////*/
+
+footer {
+    margin: 0;
+    padding: 50px 20px 20px 20px;
+
+    background-color: #BAB0D6;
 }
 
-#buttons {
-    margin: 0 10px 50px 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+
+
+footer h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    font-size: 1.125em;
 }
 
-#buttons a {
-    padding: 15px 20px 5px 20px;
-    border: 1px solid;
-    border-radius: 30px;
+footer a {
 
-    font-family: 'ObjectSans';
-    font-weight: bold;
+    text-underline-offset: 0.2em;
+    line-height: 1.1em;
+    text-decoration: underline 1px solid #101010 !important;
 }
 
-#buttons #next{
-    text-align: right;
-}
-
-#buttons #buttonlabel {
-    margin: 0 0 5px 0;
-    font-family: 'EditorialNew';
-    font-weight: 400;
-}
 
 #logo-footer {
-    max-width: 250px;
-    margin-top: 30px;
-}
-
-#self {
-    display: none;
+    height: 100px;
 }
 
 #footer-social {
-    margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 50px 0;
+
 }
 
-/* Animation and interaction */
+#footer-social > p {
+    margin-bottom: 50px;
 
-li:hover {
-    color: #57506c;
 }
 
-a:hover {
-    color: #7C7397;
+#footer-social > a {
+    display: inline;
+    margin-bottom: 20px;
+
 }
 
-#previous:hover {
+#footer-about > p {
+    max-width: 33em;
+    margin-bottom: 20px;
+
+}
+
+#copyright {
+    margin: 50px 0 0 0;
+    font-size: 0.875em;
+}
+
+footer > #back-to-top {
+    display: inline-block !important; /* Keeps it as inline text */
+    margin: 0 auto 0 0; /* Ensures no unwanted margins */
+}
+
+/* .underlined {
+    text-decoration: underline 1px solid #101010 !important;
+    text-underline-offset: 0.2em;
+} */
+
+/*/////////////////////// FOOTER end ////////////////////////*/
+
+
+/*///////////////////////// BUTTON start //////////////////////////*/
+
+
+#about {
+    display: block;
+    margin: 50px 20px;
+    padding: 30px 0;
+
+    background-color: #101010;
+    border-radius: 16px;
+
     color: #FCF7F7;
-    background-color: #110F10;
+    font-size: 1.25em;
+    text-align: center;
+    font-family: 'RightGroteskMedium';
+    text-transform: uppercase;
 }
 
-#next:hover {
-    color: #FCF7F7;
-    background-color: #110F10;
+#buttons {
+    
+    
+    margin: 90px 10px 100px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
 }
 
-.social:hover {
+#buttons a {
+    background-color: #101010;
+    border: 1px solid #101010;
+    border-radius: 16px;
     color: #FCF7F7;
-    background-color: #110F10;
+    padding: 20px 20px 20px 20px;
+
+    font-family: 'RightGroteskMedium';
+    text-transform: uppercase;
 }
 
-#footer-about a:hover {
-    color: #FCF7F7;
+
+#buttons #next{
+    
+    text-align: right;
 }
+
+
+#buttons .button-project {
+    display: none;
+}
+
+#buttons #button-label {
+    margin: 0;
+    font-family: 'RightGroteskMedium';
+    font-size: 1em;
+}
+
+
+/*///////////////////////// BUTTON end //////////////////////////*/
+
+/*/////////////////////// TEXT start ////////////////////////*/
+
+
+h1 {
+    margin: 0;
+
+    font-family: 'RightGroteskDark';
+    font-size: 5em;
+}
+
+h5 {
+    margin: 30px 20px;
+
+    font-family: 'EditorialNew';
+    font-weight: 200;
+    font-size: 2.25em;
+    line-height: 1.2em;
+}
+
+/*/////////////////////// TEXT end ////////////////////////*/
+
+
+
+/*///////////////////////// DETAILS start //////////////////////////*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid #101010;
+    font-size: 1.125em;
+}
+
+th, td {
+    border-bottom: 1px solid #101010;
+
+}
+
+
+th {
+    text-align: left;
+    padding: 1em 0;
+}
+
+td {
+    padding: 1em 0 1em 20px;
+}
+
+
+
+/*///////////////////////// DETAILS end //////////////////////////*/
+
+
+
+/*///////////////////////// FOR PROJECT PAGES start //////////////////////////*/
+
+#intro {
+    margin: 0;
+    padding: 0;
+}
+
+
+#details, #overview {
+    margin: 30px 20px;
+}
+
+#project {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#project > .text > h2 {
+    margin: 18px 0 0 0;
+    font-size: 1em;
+}
+
+#project > .text {
+    padding: 20px 20px 20px 20px;
+}
+
+
+img {
+    margin: 10px 0;
+    padding: 0;
+    max-width: 100%;
+}
+/*///////////////////////// FOR PROJECT PAGES end //////////////////////////*/
+
+
+
+
+/*//////////////////// MOBILE (max-width: 768px) end //////////////////////*/
+
+
+
+/*/////////////// MOBILE HORIZONTAL(min-width: 768px) start /////////////////*/
 
 @media only screen and (min-width: 768px) {
-    /* main {
-        margin: 40px 0;
-    
-    } */
-
-    /* main #work {
-        margin: 40px 0 50px 0;
-        grid-column: 1/ span 3;
-    } */
-
-    /* h2 {
-        letter-spacing: -0.02em;
-    } */
-
-    p {
-        font-size: 1.1em;
-    }
-
-    p:first-child {
-        margin-top: 0;
-    }
-
-    a {
-        font-size: 1.1em;
-    }
-
-    a[href^="mailto:"] {
-        font-size: 1em;
-    }
-
-    h1 {
-        margin: 0 10px 10px 10px;
-
-        grid-column: 1/ 1;
-        grid-row: 1/ 1;
-        justify-self: end;
-
-    }
 
 
+
+    /*/////////////////////// FOOTER start ////////////////////////*/
     footer {
+        padding: 100px 20px 50px 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
+        column-gap: 10px;
     }
-
-    footer h3{
-        margin-top: 0;
-    }
-
-    .text{
-        max-width: 600px;
-        margin: 40px auto 50px auto;
-    }
-
-    #intro {
-        max-width: 600px;
-        margin: 40px auto 50px auto;
-        /* max-width: 600px; */
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
-    }
-
-    #end {
-        margin: 50px 10px;
-    }
-
-    #overview {
-        max-width: 600px;
-        grid-column: 1/ span 2;
-        grid-row: 1/1;
-    }
-
-    #side {
-        grid-column: 3/3;
-        grid-row: 1/1;
-    }
-
-    #buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
-
-    #previous {
-        grid-column: 1/1;
-    }
-
-    #next {
-        grid-column: 3/3;
-    }
-
 
     #logo-footer {
         margin: 0;
 
-        grid-column: 1 / 1;
-        grid-row: 2/2;
-        align-self: end;
-    }
-
-    #footer-social {
-        margin-bottom: 0;
-        display: block;
-    }
-
-    #footer-social a {
-        height: 40px;
-        width: 130px;
-        
-        display: block;
-        margin-bottom: 10px;
-        text-align: center;
     }
 
     #footer-about {
+        max-width: 33em;
+        /* padding-bottom: 30px; */
         grid-column: 2 / span 2;
         grid-row: 1/ span 2;
     }
 
+    #copyright {
+        margin: auto 0 0 0;
+    }
+    /*//////////////////////// FOOTER end /////////////////////////*/
+
+
+
+
+
+
+
+
+
+    /*///////////////////////// BUTTON start //////////////////////////*/
+
+    #about {
+        max-width: 60%;
+        margin: 50px auto 30px auto;
+    }
+
+    #buttons a {
+        width: 300px;
+    }
+
+    #buttons #previous{
+        justify-self: start;
+    }
+    
+    #buttons #next{
+        justify-self: end;
+    }
+
+    #buttons .button-project {
+        display: inline;
+
+        font-family: 'RightGroteskDark';
+        font-size: 2.22223em;
+        letter-spacing: 0.05em;
+    }
+
+
+    /*///////////////////////// BUTTON end //////////////////////////*/
+
+    
+    /*/////////////////// FOR PROJECT PAGES start /////////////////////*/
+
+
+    /*/////////// INTRO  start /////////*/
+    #intro {
+        display: grid;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    #intro > h5 {
+        
+        grid-column: 1/ span 3;
+    }
+
+    #intro > img {
+        grid-column: 1/ span 3;
+    }
+
+    #intro > #details {
+        grid-column: 1/ span 2;
+    }
+
+    #intro > #overview {
+        grid-column: 1 / span 2;
+    }
+
+
+
+
+
+    /*/////////// PROJECT  start /////////*/
+    #project {
+        display: grid;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 40px;
+    }
+
+    #project img {
+        margin: 0;
+        padding: 0 10px 0 0;
+        grid-column: 1 / span 2;
+    }
+
+    #project .text  {
+        grid-column: 3/ 3;
+        padding: 0;
+    }
+
+    #project > .text > h2 {
+        margin: 20px 0 0 0;
+    }
+    /*/////////////////// FOR PROJECT PAGES end ///////////////////////*/
+
+
+    /*////////////// ANIMATION & INTERACTION start ///////////////*/
+
+    #grid li:hover .info {
+        color: #B33031;
+        font-style: italic;
+    }
+
+
+    .navbar > ul > li > a:hover {
+        color: #B33031;
+        font-style: italic;
+    }
+/*
+    .navbar > ul > li > a:focus {
+        color: #B33031;
+        font-style: italic;
+    } */
+
+
+    #buttons > a:hover {
+        /* background-color: #BAB0D6; */
+        /* color: #BAB0D6;
+        font-style: italic; */
+
+        color: #101010;
+        background-color: #FCF7F7;
+        border: 1px solid #101010;
+    }
+
+    #comingsoon a:hover {
+        background-color: #BAB0D6;
+        color: #101010;
+    }
+
+    #footer-social a:hover {
+        color: #FCF7F7;
+        font-style: italic;
+
+        /* text-decoration: underline 1px solid #FCF7F7; */
+    }
+
+    footer a:hover {
+        color: #FCF7F7;
+        font-style: italic;
+
+    }
+
+    .underlined:hover {
+        text-decoration: underline 1px solid #FCF7F7 !important;
+    }
+
+
+    /*////////////// ANIMATION & INTERACTION end ///////////////*/
+
 }
 
+/*/////////////// MOBILE HORIZONTAL(min-width: 768px) end /////////////////*/
 
-@media only screen and (min-width: 1000px) {
 
-    h1 {
-        font-size: 6em;
-    }
 
-    section p {
-        font-size: 1em;
-    }
 
-    footer {
-        padding: 50px 15px 20px 15px;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-    }
 
-     /* Classes styling */
-     .container {
+/*////////////////// DESKTOP (min-width: 1200px) start ////////////////////*/
+
+@media only screen and (min-width: 1200px) {
+
+    /*/////////////////// NAVIGATION start ////////////////////*/
+
+    .logo {
         height: 80px;
     }
 
-    .text {
-        max-width: 800px;
-        margin: 60px auto 70px auto;
-        
-    }
-    .text h2 {
-        max-width: 600px;
-        margin: 10px auto 5px auto;
+    /*/////////////////// NAVIGATION end ////////////////////*/
+
+    /*/////////////////////// TEXT start ////////////////////////*/
+
+    p {
+        font-size: 1.25em;
     }
 
-    .text p {
-        margin: 0 auto 10px auto;
+    a {
+        font-size: 1.25em;
     }
 
-    /* Id styling */
-
-    #logo {
-        height: 50px;
+    footer h6 {
+        font-size: 1.25em;
     }
 
-    #hero {
-        padding: 0;
-        margin: 100px 0 0 0;
+    /*/////////////////////// TEXT start ////////////////////////*/
+
+
+
+
+    /*//////////// HEADER, MAIN, SECTIONS start \\\\\\\\\\\\\\*/
+    header {
+        margin-top: 170px;
     }
 
-    #hero img{
-        width: 100%;
+    /*\\\\\\\\\\\\\ HEADER, MAIN, SECTIONS end //////////////*/
+
+
+
+
+    /*/////////////////// FOOTER start \\\\\\\\\\\\\\\\\\\\\\*/
+
+
+    footer {
+        padding: 150px 20px 50px 20px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+
     }
 
-    #intro {
-        max-width: 800px;
+    footer h3 {
+        margin-bottom: 10px;
+        font-size: 1.3em;
     }
-    
+
+    footer p {
+        margin: 0;
+    }
+
     #logo-footer {
-        max-width: 350px;
+        height: 100%;
+        margin: auto auto 0 auto;
+        max-height: 450px;
 
-        grid-column: 1 / span 2;
+        grid-column: 1 / 1;
+        grid-row: 1/ span 8;
     }
 
     #footer-social {
-        gap: 10px;
 
-        grid-column: 1 / span 2;
-        grid-row: 1/1;
+        margin: 0;
+        grid-column: 2 / 2;
+        grid-row: 1/ span 7;
+
     }
 
     #footer-social a {
-        height: 40px;
-        align-self: end;
+
+        text-decoration: underline 1px solid #101010;
     }
 
     #footer-about {
+        /* padding-bottom: 30px; */
         grid-column: 3 / 3;
-        grid-row: 1/ span 2;
+        grid-row: 1/ span 7;
     }
+
+    /* #back-to-top {
+        grid-column: 2 / 2;
+        grid-row: 8 / 8;
+        align-self: end;
+
+    } */
+
+    #copyright {
+        grid-column: 3 / 3;
+        grid-row: 8 / 8;
+        align-self: end;
+        font-size: 1em;
+    }
+
+    .underlined {
+        text-decoration: none;
+    }
+
+    /*\\\\\\\\\\\\\\\\\ FOOTER end ////////////////////*/
+
+
+
+
+
+    /*/////////////////// BUTTON start \\\\\\\\\\\\\\\\\*/
+
+
+     #about {
+        max-width: 50%;
+        margin: 70px auto 150px auto;
+        padding: 30px 0;
+        font-size: 2em;
+    }
+
+    #buttons {
+    
+        margin: 90px 10px 200px 10px;
+    }
+
+    #buttons a {
+        width: 400px;
+    }
+
+
+    /*\\\\\\\\\\\\\\\\\ BUTTON end ////////////////////*/
+
+
+
+
+
+    /*/////////////////// FOR PROJECT PAGES start /////////////////////*/
+    /* #project {
+        display: grid;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    #project img {
+        margin: 0;
+        grid-column: 1 / span 2;
+    }
+
+    #project .text  {
+        grid-column: 3/ 3;
+        padding: 0;
+    }
+
+    #project > .text > h2 {
+        margin: 0;
+    } */
+    /*/////////////////// FOR PROJECT PAGES end ///////////////////////*/
+
+
+
 }
+
+/*\\\\\\\\\\\\\\\\\ DESKTOP (min-width: 1200px) end ////////////////////*/
+
+
