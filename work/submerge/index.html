@@ -3,87 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submerge</title>
+    <title>Kim Eunice Papa portfolio</title>
 
+    <!--/ /-------- Normalize CSS --------/ /-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link href="styles.css" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="navbar">
+        <nav class="navbar">
+            <a href="../index.html" ><img src="../../images/logo-svg.svg" alt="K" class="logo"></a>
 
-                <a href="../../index.html" ><img src="../../images/logo-svg.svg" alt="KIM:" id="logo"></a>
+            <ul>
 
-                <nav>
-                    <ul>
-                        
-                        <li id="work-nav">
-                            <!-- <img src="../../images/dot.png" alt=""> -->
-                            <a href="../../#projects">work</a>
-                        </li>
-                        <li id="about-nav">
-                            <!-- <img src="images/dot.png" alt=""> -->
-                            <a href="../../about/">about</a>
-                        </li>
-                    </ul>    
-                </nav>
+                <li>
+                    <!-- <img src="../images/dot.png" alt=""> -->
+                    <a href="../../#work">work</a>
+                </li>
 
-            </div>
-        </div>
+                <li>
+                    <!-- <img src="../images/dot.png" alt=""> -->
+                    <a href="../pdfs/kimeunice_papa_graphic_designer.pdf" target="_blank">resume</a>
+                </li>
+
+                <li>
+                    <!-- <img src="images/dot.png" alt=""> -->
+                    <a href="../../about/">about</a>
+                </li>
+            </ul>    
+        </nav>
         <div id="hero">
             <h1>
                 Submerge
-            </h1> 
-            <img src="images/hero.jpg" alt="Submerge music festival mushroom logo" id="heroimg">
+            </h1>
+         
         </div>
     </header>
 
+    <main>
+        
+        
 
-    <main>   
+
         <section id="intro">
+            <h5>
+                Korean R&B + Indie music and art festival for humans to drown themselves in music, dance & relax in nature.
+            </h5>
 
+
+            <img src="images/hero.jpg" alt="Submerge music festival mushroom logo" id="heroimg">
+            
+            <div id="details">
+
+            <table>
+
+                    <tr>
+                        <th scope="row">ROLE</th>
+                        <td>Graphic Designer</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">YEAR</th>
+                        <td>2022</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">DURATION</th>
+                        <td>10 weeks</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">TOOLS</th>
+                        <td>Adobe Illustrator, Adobe Photoshop, Figma</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+                 
             <div id="overview">
-
-                <h2>OVERVIEW</h2>
 
                 <p>
                     Submerge is a Korean R&B + Indie music and art festival for humans to drown themselves in music, dance & relax in nature. To experience such a festival is an opportunity to discover new artists, food, emotions, and other human souls.
                 </p>
 
-            </div>
-
-            <div id="side">
-                
-                <h2>YEAR</h2>
-                <p>
-                    2022 
-                </p>
-
-                <h2>DURATION</h2>
-                <p>
-                    10 weeks 
-                </p>
-
-                <h2>ROLE</h2>
-                <p>
-                    Graphic Designer
-                </p>
-
-                <h2>TOOLS</h2>
-                <p>
-                    Adobe Illustrator, Adobe Photoshop, Figma
-                </p>
-
-            </div>
+                </div>
         </section>
+
 
         <section id="project">
 
             <img src="images/sketches.jpg" alt="Submerge logo sketches">
-
 
             <div class="text">
                 <h2>IDEATION</h2>
@@ -98,6 +116,8 @@
 
             </div>
 
+            <img src="images/logo-1.jpg" alt="Submerge logo (primary, wordmark, brandmark)">
+            <img src="images/position.jpg" alt="Submerge logo positioning">
 
             <div class="text">
 
@@ -114,8 +134,8 @@
 
             </div>
 
-            <img src="images/logo-1.jpg" alt="Submerge logo (primary, wordmark, brandmark)">
-            <img src="images/position.jpg" alt="Submerge logo positioning">
+            
+            
             <img src="images/logo-mono.jpg" alt="Submerge logo in black and white">
             
             <div class="text">
@@ -188,51 +208,65 @@
 
             <img src="images/snack.jpg" alt="Submerge collaboration with Popadelics (shiitake mushroom snack)"> 
             
-        </section>
-
-        <section id="end">
-            <p>Thank you for viewing</p>
-
-            <p>Created by</p>
-            <p>Kim Eunice Papa</p>
-            <p>2022</p>
-            
             
         </section>
 
         <div id="buttons">
             <a href="../openden/" id="previous">
-                <p id="buttonlabel">previous</p>
-                <p>Open Den</p>
+                <p id="button-label">previous</p>
+                <p class="button-project">Tour Poster</p>
             </a>
 
             <a href="../nolak/" id="next">
-                <p id="buttonlabel">next</p>
-                <p>Nolak</p>
+                <p id="button-label">next</p>
+                <p class="button-project">Nolak</p>
             </a>
         </div>
         
+    
+
+        <div id="thankyou-box">
+            <p id="thankyou">
+                Thank you for making it this far
+            </p>
+        </div>
     </main>
 
     <footer>
 
+        
+
+        <img src="../../images/logo-svg.svg" alt="logo K" id="logo-footer">
+
         <div id="footer-social">
-            <a href="https://www.behance.net/papakeunice/projects" target="_blank" class="social">Behance</a>
-            <a href="https://www.linkedin.com/in/kim-eunice-papa" target="_blank" class="social">LinkedIn</a>
-            <a href="https://www.instagram.com/kimeunicepapa/?hl=en" target="_blank" class="social">Instagram</a>
+            <p>CONTACT AT:  <br/>
+            <a href="mailto:&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="underlined">&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+
+            <a href="https://www.linkedin.com/in/kim-eunice-papa" target="_blank" class="social underlined">LINKEDIN</a>
+
+            <a href="https://www.behance.net/papakimeunice" target="_blank" class="social underlined">BEHANCE</a>
+            
+            <a href="https://www.instagram.com/kimeunicepapa/?hl=en" target="_blank" class="social underlined">INSTAGRAM</a>
         </div>
 
         <div id="footer-about">
-            <h3>ABOUT</h3>
-            <p>Human. Artist. Digital Designer.</p>
-            <p>I'm Kim Eunice Papa, a Filipino-Italian designer and multimedia artist, based in California. I studied Design with a minor in Museum Studies at the University of California, Davis. I specialize in UX/UI design, web design, and graphic design.</p>
-            <p>P.S. Thank you for visiting my portfolio. Hope you have a fun time being you.</p>
-            <a href="../../about/" class="underlined">Learn more about me</a>
-            <p>Contact me at: <a href="mailto:&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="underlined">&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-            <p>Designed and coded by Kim Eunice Papa</p>
+            <h6>ABOUT</h6>
+            <p>
+                Refined taste, a curious mind, consistent work, and a deep obsession with the craft.
+            </p>
+            <p>
+                Kim Eunice Papa is a digital designer and multimedia artist, born in Italy and based in California, with a background in Design from the University of California, Davis. She specializes in graphic design, UX/UI design, and web design.
+            </p>
+            <p>
+                P.S. Hope you have fun being you.
+            </p>
+            
         </div>
 
-        <img src="../../images/logo-svg.svg" alt="logo Kim Eunice Papa" id="logo-footer">
+        <a href="#top" id="back-to-top" class="underlined">BACK TO TOP</a>
+        
+        <p id="copyright">© KIM EUNICE PAPA 2025</p>
+
     </footer>
 </body>
 </html>
