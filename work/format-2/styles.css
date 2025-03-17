@@ -51,11 +51,13 @@
 
 
 /*////////////////////// MUST COPY start ///////////////////////*/
+
 * {
     box-sizing: border-box;
 }
 
 body {
+
     background-color: #FCF7F7;
     color: #101010;
     font-family: "Inter", sans-serif;
@@ -85,17 +87,12 @@ a {
     display: inline;
     text-decoration: none;
     color: #101010;
-    
+
     font-size: 1.125em;
 }
 
 a[href^="mailto:"] {
     font-size: 1em;
-}
-
-h1 {
-    margin: 0;
-    font-size: 3em;
 }
 
 
@@ -213,7 +210,7 @@ footer h6 {
 }
 
 footer a {
-    
+
     text-underline-offset: 0.2em;
     line-height: 1.1em;
     text-decoration: underline 1px solid #101010 !important;
@@ -240,7 +237,7 @@ footer a {
 #footer-social > a {
     display: inline;
     margin-bottom: 20px;
-    
+
 }
 
 #footer-about > p {
@@ -285,28 +282,140 @@ footer > #back-to-top {
     text-transform: uppercase;
 }
 
+#buttons {
+    
+    
+    margin: 90px 10px 100px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+#buttons a {
+    background-color: #101010;
+    border: 1px solid #101010;
+    border-radius: 16px;
+    color: #FCF7F7;
+    padding: 20px 20px 20px 20px;
+
+    font-family: 'RightGroteskMedium';
+    text-transform: uppercase;
+}
+
+
+#buttons #next{
+    
+    text-align: right;
+}
+
+
+#buttons .button-project {
+    display: none;
+}
+
+#buttons #button-label {
+    margin: 5px 0;
+    font-family: 'RightGroteskMedium';
+    font-size: 1em;
+}
+
 
 /*///////////////////////// BUTTON end //////////////////////////*/
 
 /*/////////////////////// TEXT start ////////////////////////*/
 
 
+h1 {
+    margin: 0;
+
+    font-family: 'RightGroteskDark';
+    font-size: 5em;
+}
+
+h5 {
+    margin: 30px 20px;
+
+    font-family: 'EditorialNew';
+    font-weight: 200;
+    font-size: 2.25em;
+    line-height: 1.2em;
+}
 
 /*/////////////////////// TEXT end ////////////////////////*/
 
 
 
+/*///////////////////////// DETAILS start //////////////////////////*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid #101010;
+    font-size: 1.125em;
+}
+
+th, td {
+    border-bottom: 1px solid #101010;
+
+}
+
+
+th {
+    text-align: left;
+    padding: 1em 0;
+}
+
+td {
+    padding: 1em 0 1em 20px;
+}
+
+
+
+/*///////////////////////// DETAILS end //////////////////////////*/
+
+
+
+/*///////////////////////// FOR PROJECT PAGES start //////////////////////////*/
+
+#intro {
+    margin: 0;
+    padding: 0;
+}
+
+
+#details, #overview {
+    margin: 30px 20px;
+}
+
+#project {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#project > .text > h2 {
+    margin: 18px 0 0 0;
+    font-size: 1em;
+}
+
+#project > .text {
+    padding: 20px 20px 20px 20px;
+}
+
+
+img {
+    margin: 10px 0;
+    padding: 0;
+    max-width: 100%;
+}
+/*///////////////////////// FOR PROJECT PAGES end //////////////////////////*/
+
+
+
+
 /*//////////////////// MOBILE (max-width: 768px) end //////////////////////*/
-
-
-
-/*/////////////////////*/
-/*/////////////////////*/
-/* START HERE */
-/*/////////////////////*/
-/*/////////////////////*/
-
-
 
 
 
@@ -356,11 +465,87 @@ footer > #back-to-top {
         margin: 50px auto 30px auto;
     }
 
+    #buttons a {
+        width: 300px;
+    }
+
+    #buttons #previous{
+        justify-self: start;
+    }
+    
+    #buttons #next{
+        justify-self: end;
+    }
+
+    #buttons .button-project {
+        display: inline;
+
+        font-family: 'RightGroteskDark';
+        font-size: 2.22223em;
+        letter-spacing: 0.05em;
+    }
+
 
     /*///////////////////////// BUTTON end //////////////////////////*/
 
+    
+    /*/////////////////// FOR PROJECT PAGES start /////////////////////*/
 
 
+    /*/////////// INTRO  start /////////*/
+    #intro {
+        display: grid;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    #intro > h5 {
+        
+        grid-column: 1/ span 3;
+    }
+
+    #intro > img {
+        grid-column: 1/ span 3;
+    }
+
+    #intro > #details {
+        grid-column: 1/ span 2;
+    }
+
+    #intro > #overview {
+        grid-column: 1 / span 2;
+    }
+
+
+
+
+
+    /*/////////// PROJECT  start /////////*/
+    #project {
+        display: grid;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 40px;
+    }
+
+    #project img {
+        margin: 0;
+        padding: 0 10px 0 0;
+        grid-column: 1 / span 2;
+    }
+
+    #project .text  {
+        grid-column: 3/ 3;
+        padding: 0;
+    }
+
+    #project > .text > h2 {
+        margin: 20px 0 0 0;
+    }
+    /*/////////////////// FOR PROJECT PAGES end ///////////////////////*/
 
 
     /*////////////// ANIMATION & INTERACTION start ///////////////*/
@@ -375,16 +560,21 @@ footer > #back-to-top {
         color: #B33031;
         font-style: italic;
     }
-/* 
+/*
     .navbar > ul > li > a:focus {
         color: #B33031;
         font-style: italic;
     } */
 
 
-    #about:hover {
-        background-color: #BAB0D6;
+    #buttons > a:hover {
+        /* background-color: #BAB0D6; */
+        /* color: #BAB0D6;
+        font-style: italic; */
+
         color: #101010;
+        background-color: #FCF7F7;
+        border: 1px solid #101010;
     }
 
     #comingsoon a:hover {
@@ -410,8 +600,8 @@ footer > #back-to-top {
     }
 
 
-    /*////////////// ANIMATION & INTERACTION end ///////////////*/  
-    
+    /*////////////// ANIMATION & INTERACTION end ///////////////*/
+
 }
 
 /*/////////////// MOBILE HORIZONTAL(min-width: 768px) end /////////////////*/
@@ -432,7 +622,7 @@ footer > #back-to-top {
     }
 
     /*/////////////////// NAVIGATION end ////////////////////*/
-    
+
     /*/////////////////////// TEXT start ////////////////////////*/
 
     p {
@@ -451,7 +641,7 @@ footer > #back-to-top {
 
 
 
-    
+
     /*//////////// HEADER, MAIN, SECTIONS start \\\\\\\\\\\\\\*/
     header {
         margin-top: 170px;
@@ -462,25 +652,9 @@ footer > #back-to-top {
 
 
 
-    /*/////////////////// BUTTON start \\\\\\\\\\\\\\\\\*/
-
-
-    #about {
-        max-width: 50%;
-        margin: 70px auto 150px auto;
-        padding: 30px 0;
-        font-size: 2em;
-    }
-
-
-    /*\\\\\\\\\\\\\\\\\ BUTTON end ////////////////////*/
-
-
-
-
     /*/////////////////// FOOTER start \\\\\\\\\\\\\\\\\\\\\\*/
 
-    
+
     footer {
         padding: 150px 20px 50px 20px;
 
@@ -488,9 +662,9 @@ footer > #back-to-top {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         column-gap: 10px;
-    
+
     }
-    
+
     footer h3 {
         margin-bottom: 10px;
         font-size: 1.3em;
@@ -514,7 +688,7 @@ footer > #back-to-top {
         margin: 0;
         grid-column: 2 / 2;
         grid-row: 1/ span 7;
-        
+
     }
 
     #footer-social a {
@@ -551,11 +725,59 @@ footer > #back-to-top {
 
 
 
+
+    /*/////////////////// BUTTON start \\\\\\\\\\\\\\\\\*/
+
+
+     #about {
+        max-width: 50%;
+        margin: 70px auto 150px auto;
+        padding: 30px 0;
+        font-size: 2em;
+    }
+
+    #buttons {
     
+        margin: 90px 10px 200px 10px;
+    }
+
+    #buttons a {
+        width: 400px;
+    }
+
+
+    /*\\\\\\\\\\\\\\\\\ BUTTON end ////////////////////*/
 
 
 
-    
+
+
+    /*/////////////////// FOR PROJECT PAGES start /////////////////////*/
+    /* #project {
+        display: grid;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    #project img {
+        margin: 0;
+        grid-column: 1 / span 2;
+    }
+
+    #project .text  {
+        grid-column: 3/ 3;
+        padding: 0;
+    }
+
+    #project > .text > h2 {
+        margin: 0;
+    } */
+    /*/////////////////// FOR PROJECT PAGES end ///////////////////////*/
+
+
+
 }
 
 /*\\\\\\\\\\\\\\\\\ DESKTOP (min-width: 1200px) end ////////////////////*/
