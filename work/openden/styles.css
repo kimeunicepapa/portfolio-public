@@ -409,6 +409,14 @@ td {
     padding: 20px 20px 20px 20px;
 }
 
+#project > .text > ul > li {
+    margin-bottom: 10px;
+    font-size: 1.125em;
+    line-height: 1.3em;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
 
 img {
     margin: 10px 0;
