@@ -3,96 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kim Eunice Papa portfolio</title>
+    <title>Open Den</title>
 
-    <!--/ /-------- Normalize CSS --------/ /-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-    <!--/ /-------- Google Fonts --------/ /-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link href="styles.css" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a href="../index.html" ><img src="../../images/logo-svg.svg" alt="K" class="logo"></a>
+        <div class="container">
+            <div class="navbar">
 
-            <ul>
+                <a href="../../index.html" ><img src="../../images/logo-svg.svg" alt="KIM:" id="logo"></a>
 
-                <li>
-                    <!-- <img src="../images/dot.png" alt=""> -->
-                    <a href="../../#work">work</a>
-                </li>
+                <nav>
+                    <ul>
+                        
+                        <li id="work-nav">
+                            <!-- <img src="../../images/dot.png" alt=""> -->
+                            <a href="../../#projects">work</a>
+                        </li>
+                        <li id="about-nav">
+                            <!-- <img src="images/dot.png" alt=""> -->
+                            <a href="../../about/">about</a>
+                        </li>
+                    </ul>    
+                </nav>
 
-                <li>
-                    <!-- <img src="../images/dot.png" alt=""> -->
-                    <a href="../pdfs/kimeunice_papa_graphic_designer.pdf" target="_blank">resume</a>
-                </li>
-
-                <li>
-                    <!-- <img src="images/dot.png" alt=""> -->
-                    <a href="../../about/">about</a>
-                </li>
-            </ul>    
-        </nav>
+            </div>
+        </div>
         <div id="hero">
             <h1>
                 Open Den
-            </h1>
-         
+            </h1> 
+            <img src="images/hero.jpg" alt="Open Den website on macbook" id="heroimg">
         </div>
     </header>
 
-    <main>
-        
-        
 
-
+    <main>   
         <section id="intro">
-            <h5>
-                A community garden as a meeting place for sharing, collaborating, and making meaningful connections.
-            </h5>
 
-
-            <img src="images/hero.jpg" alt="Open Den website on macbook" id="heroimg">
-            
-            <div id="details">
-
-            <table>
-
-                    <tr>
-                        <th scope="row">ROLE</th>
-                        <td>UX/UI Designer</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">YEAR</th>
-                        <td>2022</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">DURATION</th>
-                        <td>6 weeks</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">TOOLS</th>
-                        <td>Figma</td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-                 
             <div id="overview">
 
-                <p>
-                    The Open Den community garden website promotes a meeting place for sharing, collaborating, and making meaningful connections. Also, it’s a great resource for improving food security and healthier diets. 
+                <h2>OVERVIEW</h2>
+
+                <p>The Open Den community garden website promotes a meeting place for sharing, collaborating, and making meaningful connections. Also, it’s a great resource for improving food security and healthier diets. 
                 </p>
 
                 <p>
@@ -102,12 +59,35 @@
                 </p>
 
             </div>
-        </section>
 
+            <div id="side">
+                
+                <h2>YEAR</h2>
+                <p>
+                    2022
+                </p>
+
+                <h2>DURATION</h2>
+                <p>
+                    6 weeks 
+                </p>
+
+                <h2>ROLE</h2>
+                <p>
+                    UX/UI Designer
+                </p>
+
+                <h2>TOOLS</h2>
+                <p>
+                    Figma
+                </p>
+
+            </div>
+        </section>
 
         <section id="project">
 
-            <div class="text full-width">
+            <div class="text">
 
                 <h3>PROBLEM</h3>
 
@@ -122,7 +102,7 @@
 
             </div>
 
-            <div class="text full-width">
+            <div class="text">
 
                 <h2>USER RESEARCH</h2>
                 
@@ -152,33 +132,27 @@
                     </li>
                 </ul>
 
-                
-
-            </div>
-            
-            <div class="image">
-                <img src="images/persona1.png" alt="User persona">
-                <figcaption>Persona 1</figcaption>
-            </div>
-
-
-            <div class="text"> 
                 <h3>Persona</h3>
 
                 <p>
                     I wanted to form a deeper understanding of the users' needs, experiences, and behaviors. At first, I created the persona of Teo Almeida, following my first target audience which was low-income families with children under 18, that have a screen time of over 2 hours per day. However, as I continued to develop the website and received feedback, I wanted the recipe section to be one of the main features so I adjusted my target to college students.
                 </p>
+
             </div>
 
+            <div id="persona">
+                <div class="image">
+                    <img src="images/persona1.png" alt="User persona">
+                    <figcaption>Persona 1</figcaption>
+                </div>
 
-            <div class="image">
-                <img src="images/persona2.png" alt="User persona">
-                <figcaption>Persona 2</figcaption>
+                <div class="image">
+                    <img src="images/persona2.png" alt="User persona">
+                    <figcaption>Persona 2</figcaption>
+                </div>
             </div>
 
-            <img src="images/asucd.png" alt="ASUCD website screenshot">
-
-            <div class="text"> 
+            <div class="text">
 
                 <h2>COMPARATIVE RESEARCH</h2>
 
@@ -186,26 +160,13 @@
                     To get an idea of the content and elements included, I searched the web for community gardens websites. I noticed websites regarding community gardens look legitimate when they include information about their advantages, an about page, and the inclusion of contact information. The use of factual information about the impact of the community gardens makes a website look trustworthy and convincing. 
                 </p>
 
-               
-
-            </div>
-            
-
-            
-
-            <div class="text full-width"> 
-
-                
-
                 <p>
                     The color palettes range from vibrant rainbow colors or earth colors like brown and green. The community garden websites include calls to action like volunteering, visiting, and/or donating. The website that greatly influenced the look of Open Den is the ASUCD community garden page.
                 </p>
 
             </div>
 
-            
-
-            <img src="images/color.jpg" alt="color palette with dark green, brown and, two beiges ">
+            <img src="images/asucd.png" alt="ASUCD website screenshot">
 
 
             <div class="text">
@@ -218,9 +179,7 @@
 
             </div>
 
-            
-
-            <img src="images/type.jpg" alt="Typography samples of Bowlby One and, Poppins(in different weights)">
+            <img src="images/color.jpg" alt="color palette with dark green, brown and, two beiges ">
 
             <div class="text">
 
@@ -230,24 +189,21 @@
 
             </div>
 
-            
-
-            
-
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXN5IyNQKQ7ikTaIwCJ7MlR%2FDES-112---OPEN-DEN%3Fpage-id%3D0%253A1%26node-id%3D836-2%26viewport%3D719%252C304%252C0.08%26t%3DkfIaL3LRAQM4g8cv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D836%253A2" allowfullscreen></iframe>
+            <img src="images/type.jpg" alt="Typography samples of Bowlby One and, Poppins(in different weights)">
 
             <div class="text">
 
-                            <h2>IDEATION</h2>
+                <h2>IDEATION</h2>
 
-                            <h3>Wireframe</h3>
+                <h3>Wireframe</h3>
 
-                            <p>
-                                I started by wireframing the different sections that need to be included into the website. This step helps to visualize the skeleton of the platform and allows to make changes easily early on. 
-                            </p>
+                <p>
+                    I started by wireframing the different sections that need to be included into the website. This step helps to visualize the skeleton of the platform and allows to make changes easily early on. 
+                </p>
 
-                        </div>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXN5IyNQKQ7ikTaIwCJ7MlR%2FOPEN-DEN%3Fpage-id%3D0%253A1%26node-id%3D842-164%26viewport%3D719%252C304%252C0.08%26t%3DkfIaL3LRAQM4g8cv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D842%253A164" allowfullscreen></iframe>
+            </div>
+
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXN5IyNQKQ7ikTaIwCJ7MlR%2FDES-112---OPEN-DEN%3Fpage-id%3D0%253A1%26node-id%3D836-2%26viewport%3D719%252C304%252C0.08%26t%3DkfIaL3LRAQM4g8cv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D836%253A2" allowfullscreen></iframe>
 
             <div class="text">
 
@@ -259,28 +215,28 @@
 
             </div>
 
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXN5IyNQKQ7ikTaIwCJ7MlR%2FOPEN-DEN%3Fpage-id%3D0%253A1%26node-id%3D222-2%26viewport%3D719%252C304%252C0.08%26t%3DkfIaL3LRAQM4g8cv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D222%253A2" allowfullscreen></iframe>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXN5IyNQKQ7ikTaIwCJ7MlR%2FOPEN-DEN%3Fpage-id%3D0%253A1%26node-id%3D842-164%26viewport%3D719%252C304%252C0.08%26t%3DkfIaL3LRAQM4g8cv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D842%253A164" allowfullscreen></iframe>
 
             <div class="text">
+
                 <h2>FINAL PRODUCT</h2>
 
                 <h3>Desktop</h3>
                 <p>
                     The final website gives a warm and friendly feel to welcome the users. The landing page features the navigation, the mission statement, the produce of the month and the calls to action. 
                 </p>
-
+                
                 <p>
                     By scrolling down, you can view some information about the impact of the community garden, a calendar with the upcoming events, a photo gallery showcasing the produce in season, a collection of recipes, and an about section for Open Den. By clicking on the recipe link on the navigation, the drop-down menu appears as an overlay.
                 </p>
 
                 <p>
-                    *Tip: the prototype is interactive - click on recipes on the navigation bar to see more
+                    *Tip: the prototype is interactive - click on recipes to see more
                 </p>
 
             </div>
 
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZzgEPbiWdhDloHXF3dLzn2%2FOpen-Den---mobile%3Fpage-id%3D0%253A1%26node-id%3D1-11%26viewport%3D298%252C473%252C0.14%26t%3DBXUm3ZuJGacGIvNN-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A223" allowfullscreen></iframe>
-
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXN5IyNQKQ7ikTaIwCJ7MlR%2FOPEN-DEN%3Fpage-id%3D0%253A1%26node-id%3D222-2%26viewport%3D719%252C304%252C0.08%26t%3DkfIaL3LRAQM4g8cv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D222%253A2" allowfullscreen></iframe>
 
             <div class="text">
 
@@ -296,7 +252,9 @@
 
             </div>
 
-            <div class="text full-width">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZzgEPbiWdhDloHXF3dLzn2%2FOpen-Den---mobile%3Fpage-id%3D0%253A1%26node-id%3D1-11%26viewport%3D298%252C473%252C0.14%26t%3DBXUm3ZuJGacGIvNN-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A223" allowfullscreen></iframe>
+
+            <div class="text">
 
                 <h2>CONCLUSION</h2>
 
@@ -314,62 +272,51 @@
             
         </section>
 
+
+
+        <section id="end">
+            <p>Thank you for viewing</p>
+
+            <p>Created by</p>
+            <p>Kim Eunice Papa</p>
+            <p>2022</p>
+            
+            
+        </section>
+
         <div id="buttons">
-            <a href="../openden/" id="previous">
-                <p id="button-label">previous</p>
-                <p class="button-project">Tour Poster</p>
+            <a href="../vignelli/" id="previous">
+                <p id="buttonlabel">previous</p>
+                <p>The Vignelli Canon</p>
             </a>
 
-            <a href="../nolak/" id="next">
-                <p id="button-label">next</p>
-                <p class="button-project">Nolak</p>
+            <a href="../submerge/" id="next">
+                <p id="buttonlabel">next</p>
+                <p>Submerge</p>
             </a>
         </div>
         
-    
-
-        <div id="thankyou-box">
-            <p id="thankyou">
-                Thank you for making it this far
-            </p>
-        </div>
     </main>
 
     <footer>
 
-        
-
-        <img src="../../images/logo-svg.svg" alt="logo K" id="logo-footer">
-
         <div id="footer-social">
-            <p>CONTACT AT:  <br/>
-            <a href="mailto:&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="underlined">&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-
-            <a href="https://www.linkedin.com/in/kim-eunice-papa" target="_blank" class="social underlined">LINKEDIN</a>
-
-            <a href="https://www.behance.net/papakimeunice" target="_blank" class="social underlined">BEHANCE</a>
-            
-            <a href="https://www.instagram.com/kimeunicepapa/?hl=en" target="_blank" class="social underlined">INSTAGRAM</a>
+            <a href="https://www.behance.net/papakeunice/projects" target="_blank" class="social">Behance</a>
+            <a href="https://www.linkedin.com/in/kim-eunice-papa" target="_blank" class="social">LinkedIn</a>
+            <a href="https://www.instagram.com/kimeunicepapa/?hl=en" target="_blank" class="social">Instagram</a>
         </div>
 
         <div id="footer-about">
-            <h6>ABOUT</h6>
-            <p>
-                Refined taste, a curious mind, consistent work, and a deep obsession with the craft.
-            </p>
-            <p>
-                Kim Eunice Papa is a digital designer and multimedia artist, born in Italy and based in California, with a background in Design from the University of California, Davis. She specializes in graphic design, UX/UI design, and web design.
-            </p>
-            <p>
-                P.S. Hope you have fun being you.
-            </p>
-            
+            <h3>ABOUT</h3>
+            <p>Human. Artist. Digital Designer.</p>
+            <p>I'm Kim Eunice Papa, a Filipino-Italian designer and multimedia artist, based in California. I studied Design with a minor in Museum Studies at the University of California, Davis. I specialize in UX/UI design, web design, and graphic design.</p>
+            <p>P.S. Thank you for visiting my portfolio. Hope you have a fun time being you.</p>
+            <a href="../../about/" class="underlined">Learn more about me</a>
+            <p>Contact me at: <a href="mailto:&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="underlined">&#112;&#097;&#112;&#097;&#107;&#105;&#109;&#101;&#117;&#110;&#105;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+            <p>Designed and coded by Kim Eunice Papa</p>
         </div>
 
-        <a href="#top" id="back-to-top" class="underlined">BACK TO TOP</a>
-        
-        <p id="copyright">© KIM EUNICE PAPA 2025</p>
-
+        <img src="../../images/logo-svg.svg" alt="logo Kim Eunice Papa" id="logo-footer">
     </footer>
 </body>
 </html>
